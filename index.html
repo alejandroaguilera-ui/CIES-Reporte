@@ -110,6 +110,8 @@
   .chip.amarilla{background:var(--amarilla-dim);border-color:rgba(244,180,52,.5);color:#ffd98a;font-weight:600}
   .chip.crecida{background:rgba(229,71,61,.34);border:1.5px solid #e5473d;color:#fff;font-weight:700;box-shadow:0 0 0 1px rgba(229,71,61,.35) inset}
   .chip.crecida::before{content:"≋ ";color:#ffb0a8}
+  .chip.crecidaam{background:var(--amarilla-dim);border:1.5px solid var(--amarilla,#f4b434);color:#ffd98a;font-weight:700}
+  .chip.crecidaam::before{content:"≈ ";color:#f4b434}
   .maplegend{display:flex;gap:16px;flex-wrap:wrap;margin:14px 2px 0;font-size:11.5px;color:var(--ink-2)}
   .maplegend span{display:inline-flex;align-items:center;gap:7px}
   .maplegend i{width:12px;height:12px;border-radius:4px;display:inline-block;border:1px solid var(--line)}
@@ -355,24 +357,24 @@
    ============================================================ */
 const DATOS_POR_DEFECTO = {
   "meta": {
-    "reporte": "ATR N°68-A · Roja crecida río Itata",
-    "envio": "02-08-2026 · 13:20",
-    "base": "Roja Regional + Roja crecida en 11 comunas (Lonquén + Itata, ATR 68-A 13:20) · afectación 146-D 07:00 · vial 10:01 · pluviometría 10:31",
+    "reporte": "Modificación SENAPRED · Amarilla por crecida",
+    "envio": "02-08-2026 · tarde",
+    "base": "Roja Regional meteorológica vigente · crecidas DESESCALADAS a Amarilla en 11 comunas · afectación 146-D 07:00 · vial 10:01",
     "estado": "ALERTA ROJA REGIONAL · SISTEMA FRONTAL",
     "tono": "red",
-    "srcNote": "Fuentes base: <b>ATR N°68-A SENAPRED (Res. ex. N°85, 02-08 13:20)</b> — Roja por crecida río Itata + Informe Diario AM 11:05 + Informe N°146-D + DMC 09:45. Cauces: DGA (Itata en Pte. Coelemu sobre umbral rojo) · Vial 10:01 · Energía: SEC (146-D).",
-    "tickMap": "Roja Regional meteorológica en las 21 comunas · ≋ = Roja por crecida en 11 comunas — río Itata (ATR 68-A, 13:20): Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco · río Lonquén: Ninhue, San Nicolás, Portezuelo y Trehuaco",
-    "tickCauce": "DGA · 13:20 (ATR 68-A) · ROJO: Itata en Puente Coelemu (SUPERÓ UMBRAL, en alza) y Lonquén en Trehuaco · AMARILLO: Itata en Balsa Nueva Aldea y estero Coyanco",
+    "srcNote": "Fuentes base: <b>Modificación de alertamiento SENAPRED (02-08, tarde)</b> — Amarilla por crecida en 11 comunas, desescala las Rojas del Itata (ATR 68-A) y del Lonquén + Informe Diario AM 11:05 + Informe N°146-D. Cauces: DGA · Vial 10:01 · Energía: SEC (146-D).",
+    "tickMap": "Roja Regional meteorológica vigente en las 21 comunas · ≈ = Amarilla por crecida (ríos Itata y Lonquén) en 11 comunas: Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás — DESESCALADA desde Roja (modificación SENAPRED de esta tarde)",
+    "tickCauce": "DGA · según desescalada SENAPRED de la tarde: Itata en Pte. Coelemu y Lonquén bajaron del umbral rojo · en umbral amarillo con tendencia a la baja · confirmar caudales con próximo corte DGA",
     "tickAfect": "Informe N°146-D · consulta 02-ago 07:00 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
     "tickSrc": "Última consulta por plataforma · verde = dato del día · amarillo = dato anterior o por confirmar",
     "afectNote": "Total regional: <b>1.171 afectadas</b>, <b>249 damnificadas</b> (Ñiquén 80 · San Ignacio 40 · Pemuco 25 · Coelemu 22), <b>44 albergadas</b> en <b>8 albergues</b> (nuevos: Coihueco y San Carlos), <b>283 aisladas</b>, <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>228 en evaluación</b> · <b>175 con daño</b> (147 menor / 22 mayor / <b>6 destruidas</b>). Nota: tabla comunal y listado de albergues presentan diferencias en Portezuelo, Coihueco y Cobquecura — verificar con SENAPRED.",
     "footNote": "Panel informativo de emergencia — Gobierno Regional de Ñuble · Versión para difusión. Alerta Roja regional vigente; cifras oficiales en evolución (SENAPRED, DGA, DMC, SEC, MOP, MMA)."
   },
   "banner": {
-    "tono": "red",
-    "etop": "⚠ ATR N°68-A (Res. ex. N°85) · 02-08 · 13:20",
-    "titulo": "El Itata superó el umbral ROJO en Puente Coelemu: Alerta Roja por crecida para 9 comunas",
-    "texto": "La onda de crecida que el panel venía siguiendo desde la mañana se materializó: la estación <b>río Itata en Puente Coelemu sobrepasó el umbral de alerta roja</b> (DGA). SENAPRED canceló la Amarilla y declaró <b>Alerta Roja por crecida del Itata para Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco</b>. Sumadas las 4 comunas del Lonquén, la Roja por crecida cubre ahora <b>11 comunas</b>. Cursos de acción del ATR: difusión a la comunidad, <b>monitoreo de sectores ribereños con desbordes previos</b>, alistamiento de recursos de respuesta y <b>evaluación de evacuaciones preventivas</b> — foco inmediato en riberas de <b>Coelemu (95 aisladas y 100 viviendas ya en evaluación), Ñipas/Ránquil y Trehuaco</b>, con chubascos post-frontales aún pronosticados para esta tarde."
+    "tono": "amber",
+    "etop": "Modificación de alertamiento SENAPRED · 02-08 · tarde",
+    "titulo": "Desescalada: las Rojas por crecida bajan a Amarilla en las 11 comunas de ambas cuencas",
+    "texto": "SENAPRED modificó la cobertura del alertamiento: <b>Alerta Amarilla por crecida para Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás</b>, desescalando la Roja del río Itata (ATR 68-A de las 13:20) y la Roja del Lonquén vigente desde el 31-jul. La lectura hidrológica: <b>los caudales bajaron de los umbrales rojos</b> tras el paso del peak por Puente Coelemu. Se mantiene la <b>Alerta Roja Regional meteorológica</b> y la condición de Amarilla exige <b>monitoreo continuo de ambos cauces</b> — con chubascos post-frontales aún en desarrollo esta tarde (15–20 mm pronosticados) y suelos saturados, una reactivación no es descartable. No desmovilizar la vigilancia ribereña en Coelemu, Ránquil y Trehuaco hasta confirmar tendencia sostenida a la baja en el próximo corte DGA."
   },
   "kpis": [
     {
@@ -380,13 +382,13 @@ const DATOS_POR_DEFECTO = {
       "label": "Alerta regional vigente",
       "val": "Roja",
       "vsmall": false,
-      "foot": "Meteorológica + Roja por crecida en 11 comunas (Itata + Lonquén)"
+      "foot": "Meteorológica vigente · crecidas desescaladas a Amarilla (11 comunas)"
     },
     {
-      "a": "var(--rojo)",
-      "label": "Cauces en umbral rojo",
-      "val": "2",
-      "foot": "Itata en Pte. Coelemu (EN ALZA) · Lonquén · + Balsa N. Aldea amarillo"
+      "a": "var(--amarilla)",
+      "label": "Cauces sobre umbral",
+      "val": "0R · ~3A",
+      "foot": "Itata Pte. Coelemu y Lonquén bajaron del rojo · confirmar con DGA"
     },
     {
       "a": "var(--danger)",
@@ -415,44 +417,44 @@ const DATOS_POR_DEFECTO = {
     }
   ],
   "alertMap": {
-    "Bulnes": "roja crecida",
-    "Chillán": "roja crecida",
+    "Bulnes": "roja crecidaam",
+    "Chillán": "roja crecidaam",
     "Chillán Viejo": "roja",
     "El Carmen": "roja",
-    "Pemuco": "roja crecida",
+    "Pemuco": "roja crecidaam",
     "Pinto": "roja",
-    "Quillón": "roja crecida",
+    "Quillón": "roja crecidaam",
     "San Ignacio": "roja",
-    "Yungay": "roja crecida",
+    "Yungay": "roja crecidaam",
     "Coihueco": "roja",
     "Ñiquén": "roja",
     "San Carlos": "roja",
     "San Fabián": "roja",
-    "San Nicolás": "roja crecida",
+    "San Nicolás": "roja crecidaam",
     "Cobquecura": "roja",
-    "Coelemu": "roja crecida",
-    "Ninhue": "roja crecida",
-    "Portezuelo": "roja crecida",
+    "Coelemu": "roja crecidaam",
+    "Ninhue": "roja crecidaam",
+    "Portezuelo": "roja crecidaam",
     "Quirihue": "roja",
-    "Ránquil": "roja crecida",
-    "Trehuaco": "roja crecida"
+    "Ránquil": "roja crecidaam",
+    "Trehuaco": "roja crecidaam"
   },
   "cauces": [
     {
       "rio": "Río Lonquén",
       "est": "Trehuaco",
       "flow": "488",
-      "um": "rojo",
+      "um": "amarillo",
       "tr": "down",
-      "note": "en umbral rojo, BAJANDO niveles · Roja en 4 comunas vigente"
+      "note": "bajó del umbral rojo · desescalada a Amarilla (11 comunas ambas cuencas)"
     },
     {
       "rio": "Río Itata",
       "est": "Puente Coelemu",
       "flow": "3.930",
-      "um": "rojo",
-      "tr": "up",
-      "note": "SUPERÓ UMBRAL ROJO (ATR 68-A, 13:20) · Roja en 9 comunas · en alza"
+      "um": "amarillo",
+      "tr": "down",
+      "note": "bajó del umbral rojo (peak superado) · desescalada a Amarilla · confirmar caudal DGA"
     },
     {
       "rio": "Río Itata",
@@ -460,7 +462,7 @@ const DATOS_POR_DEFECTO = {
       "flow": "1.580",
       "um": "amarillo",
       "tr": "up",
-      "note": "umbral amarillo · en alza · aguas arriba del tramo en rojo"
+      "note": "umbral amarillo · tendencia a la baja tras paso del peak"
     },
     {
       "rio": "Estero Coyanco",
@@ -637,8 +639,8 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "tipo": "flood",
-      "loc": "⚠ Río Itata en ROJO · ATR N°68-A (13:20) · evacuaciones preventivas en evaluación",
-      "d": "<b>Puente Coelemu sobrepasó el umbral rojo</b> y la estación sigue en alza; Balsa Nueva Aldea en amarillo ascendente. Roja por crecida en las <b>9 comunas ribereñas</b>. Cursos de acción SENAPRED: difusión, monitoreo de sectores con desbordes históricos, alistamiento de recursos y <b>evaluación de evacuaciones preventivas</b>. Prioridad: riberas de Coelemu (95 aisladas, 100 viviendas en evaluación), Ñipas/Ránquil (albergue activo a metros del río) y Trehuaco (doble Roja: Itata + Lonquén)."
+      "loc": "Ríos Itata y Lonquén · DESESCALADA a Amarilla (tarde 02-08)",
+      "d": "SENAPRED modificó el alertamiento a <b>Amarilla por crecida en las 11 comunas</b> de ambas cuencas tras el descenso de los caudales bajo umbral rojo. Condición Amarilla = <b>monitoreo reforzado, no repliegue</b>: mantener observación ribereña en Coelemu, Ñipas/Ránquil y Trehuaco al menos hasta confirmar 12 horas de tendencia sostenida a la baja, considerando los chubascos post-frontales de esta tarde."
     },
     {
       "tipo": "flood",
@@ -647,8 +649,8 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "tipo": "flood",
-      "loc": "Quillón · nuevamente bajo Alerta Roja (ahora por el Itata)",
-      "d": "La desescalada del Coyanco duró horas: a las 13:20 la comuna quedó incluida en la <b>Roja por crecida del río Itata</b> (ATR 68-A). Coyanco se mantiene en amarillo. Persisten 35 aisladas y el puente de Alto Culturía colapsado."
+      "loc": "Quillón · en Amarilla por crecida (tercer cambio del día)",
+      "d": "Trayectoria del día: Roja por Coyanco (anoche) → Amarilla (11:05) → Roja por Itata (13:20) → <b>Amarilla (tarde)</b>. Persisten 35 aisladas en La Esmeralda y Alto Culturía y el puente colapsado. La volatilidad del alertamiento refuerza la necesidad de mantener el contacto directo con el municipio."
     },
     {
       "tipo": "flood",
@@ -794,13 +796,13 @@ const DATOS_POR_DEFECTO = {
   "fuentes": [
     {
       "n": "SENAPRED",
-      "t": "02-08 13:20 · ATR 68-A (Roja Itata)",
+      "t": "02-08 tarde · Amarilla crecida 11 comunas",
       "st": "ok"
     },
     {
       "n": "DGA (cauces)",
-      "t": "02-08 13:20 · Itata Pte. Coelemu en ROJO",
-      "st": "ok"
+      "t": "vía desescalada SENAPRED · confirmar caudales",
+      "st": "warn"
     },
     {
       "n": "DMC (amenaza + pronóstico)",
@@ -883,9 +885,9 @@ function render(D){
   // comuna alert map
   const AM=D.alertMap||{}; let cm="";
   for(const [prov,arr] of Object.entries(COMUNAS)){
-    const r=arr.filter(c=>(AM[c]||"").startsWith("roja")).length, cr=arr.filter(c=>(AM[c]||"").includes("crecida")).length, a=arr.filter(c=>AM[c]==="amarilla").length;
+    const r=arr.filter(c=>(AM[c]||"").startsWith("roja")).length, cr=arr.filter(c=>{const v=AM[c]||"";return v.includes("crecida")&&!v.includes("crecidaam")}).length, ca=arr.filter(c=>(AM[c]||"").includes("crecidaam")).length, a=arr.filter(c=>AM[c]==="amarilla").length;
     const chips=arr.map(c=>`<span class="chip ${AM[c]||''}">${c}</span>`).join("");
-    cm+=`<div class="cprov"><h4>Provincia de ${prov} <small>${r} roja${cr?` · ≋ ${cr} crecida`:''} · ${a} amar.</small></h4><div class="cchips">${chips}</div></div>`;
+    cm+=`<div class="cprov"><h4>Provincia de ${prov} <small>${r} roja${cr?` · ≋ ${cr} crecida`:''}${ca?` · ≈ ${ca} amar. crecida`:''}</small></h4><div class="cchips">${chips}</div></div>`;
   }
   set("cmap",cm);
 
