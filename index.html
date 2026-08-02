@@ -355,14 +355,14 @@
    ============================================================ */
 const DATOS_POR_DEFECTO = {
   "meta": {
-    "reporte": "Informe N°146-D (Ampliación)",
-    "envio": "02-08-2026 · 10:40",
-    "base": "Alerta Roja Regional + Roja crecida 5 comunas · afectación 07:00 · albergues 06:50 · vial 07:20 · cauces DGA 09:00 · energía SEC (146-D)",
+    "reporte": "Informe Diario AM + N°146-D",
+    "envio": "02-08-2026 · 11:05",
+    "base": "Alertas confirmadas 11:05 · afectación 146-D 07:00 · vial 10:01 · cauces DGA 09:00 · pluviometría 10:31 · DMC 10:29",
     "estado": "ALERTA ROJA REGIONAL · SISTEMA FRONTAL",
     "tono": "red",
-    "srcNote": "Fuentes base: <b>Informe SENAPRED N°146-D (Ampliación)</b> envío 10:40 + ATR N°70. Afectación: Municipalidades 07:00 · Albergues 06:50 · Energía: SEC (146-D, 12.946) · Cauces: DGA 09:00 · Vial: Carabineros/MOP 07:20 · Meteorología: DMC/SERVIMET.",
-    "tickMap": "Roja Regional meteorológica en las 21 comunas · ≋ = Roja por crecida en 5: Trehuaco, Ninhue, Portezuelo, San Nicolás (Lonquén) + Quillón (Coyanco; el estero bajó a umbral amarillo pero la alerta sigue vigente) · Amarilla por crecida en 9 comunas",
-    "tickCauce": "DGA · 02-ago 09:00 · ROJO: Lonquén (bajando) · AMARILLO: Itata en Pte. Coelemu y Balsa Nueva Aldea (SUBIENDO, onda de crecida) y estero Coyanco (bajó del rojo) · AZUL: 11 estaciones",
+    "srcNote": "Fuentes base: <b>Informe de Monitoreo Diario Regional AM (02-08 11:05)</b> + <b>Informe N°146-D</b> (10:40) + <b>Informe de Amenaza Meteorológica DMC</b> (09:45). Vial: Vialidad-MOP/Carabineros 10:01 · Cauces: DGA 09:00 · Pluviometría: DMC 10:31 · Energía: SEC (146-D) · Aeródromo: DGAC 10:34.",
+    "tickMap": "Roja Regional meteorológica en las 21 comunas · ≋ = Roja por crecida Río Lonquén: Trehuaco, Ninhue, Portezuelo y San Nicolás · Quillón DESESCALÓ a Amarilla por crecida del Coyanco (Informe Diario 11:05) · Amarilla crecida río Itata: 9 comunas",
+    "tickCauce": "DGA · 09:00 (146-D) · ROJO: Lonquén (bajando) · AMARILLO: Itata en Pte. Coelemu y Balsa Nueva Aldea (subiendo) y estero Coyanco · estado de alertas confirmado por Informe Diario 11:05",
     "tickAfect": "Informe N°146-D · consulta 02-ago 07:00 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
     "tickSrc": "Última consulta por plataforma · verde = dato del día · amarillo = dato anterior o por confirmar",
     "afectNote": "Total regional: <b>1.171 afectadas</b>, <b>249 damnificadas</b> (Ñiquén 80 · San Ignacio 40 · Pemuco 25 · Coelemu 22), <b>44 albergadas</b> en <b>8 albergues</b> (nuevos: Coihueco y San Carlos), <b>283 aisladas</b>, <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>228 en evaluación</b> · <b>175 con daño</b> (147 menor / 22 mayor / <b>6 destruidas</b>). Nota: tabla comunal y listado de albergues presentan diferencias en Portezuelo, Coihueco y Cobquecura — verificar con SENAPRED.",
@@ -370,9 +370,9 @@ const DATOS_POR_DEFECTO = {
   },
   "banner": {
     "tono": "red",
-    "etop": "Informe N°146-D (Ampliación) · corte 07:00 · envío 10:40",
-    "titulo": "La madrugada dejó 249 damnificadas y 283 aisladas; la onda de crecida del Itata baja hacia Coelemu",
-    "texto": "El 146-D consolida el golpe nocturno: <b>249 damnificadas</b> (+45%, con <b>Ñiquén como nuevo foco: 80 damnificadas y 81 viviendas con daño</b>), <b>283 aisladas</b> (Ninhue sube a 91: La Quinta 54, Coipín 16, El Rincón 16, Dubái Hualte 5), <b>175 viviendas con daño</b> (6 destruidas) y <b>8 albergues con 44 personas</b> (se suman Coihueco y San Carlos). En cauces, el <b>Lonquén sigue en rojo pero bajando</b>, el Coyanco bajó del rojo, y la señal nueva es la <b>onda de crecida del Itata bajo: Puente Coelemu y Balsa Nueva Aldea en amarillo y SUBIENDO</b> — vigilancia ribereña en Coelemu, Ránquil y Trehuaco. La electricidad mejora desde el peak nocturno: <b>12.946 clientes (4,7%)</b>, concentrados en la precordillera de Diguillín (<b>Yungay 6.418</b>, El Carmen 1.550, Pemuco 1.267). La <b>N-14-O volvió a cortarse</b> junto a la N-42; nueva caída de poste corta la N-705 en El Carmen."
+    "etop": "Informe Diario AM 11:05 + Amenaza Meteorológica DMC 09:45",
+    "titulo": "El frente dejó 38,8 mm; Quillón desescala a Amarilla y quedan chubascos post-frontales esta tarde",
+    "texto": "Carabineros reporta las tres provincias <b>nubladas y sin precipitaciones</b> (10:09): el frente principal pasó, dejando <b>38,8 mm en 24 horas en Chillán</b> (acumulado anual 528,7 mm; el déficit se reduce a −17,7%). SENAPRED <b>desescaló Quillón a Amarilla</b> por el Coyanco — la Roja por crecida queda acotada a las <b>4 comunas del Lonquén</b>, que sigue en rojo pero bajando. Atención con la <b>inestabilidad post-frontal</b>: la DMC pronostica <b>15–20 mm adicionales en el valle</b> hoy (25–30 mm precordillera, 35–45 cm de nieve en cordillera con rachas de 70 km/h) con <b>probable tormenta eléctrica en la tarde</b>, sobre suelos saturados y con el <b>Itata bajo aún subiendo en amarillo</b>. En lo vial, la <b>N-14-O quedó nuevamente operativa</b> (10:01): la N-42 es el único corte troncal. Lunes mejora parcial; martes estable."
   },
   "kpis": [
     {
@@ -380,39 +380,38 @@ const DATOS_POR_DEFECTO = {
       "label": "Alerta regional vigente",
       "val": "Roja",
       "vsmall": false,
-      "foot": "Meteorológica + Roja por crecida en 5 comunas (vigentes)"
+      "foot": "Meteorológica + Roja por crecida Lonquén (4 comunas) · Quillón desescala"
     },
     {
       "a": "var(--danger)",
       "label": "Cauces sobre umbral",
       "val": "1R · 3A",
-      "foot": "Lonquén rojo (bajando) · Itata Coelemu y N. Aldea subiendo"
+      "foot": "Lonquén rojo (bajando) · Itata bajo subiendo · DGA 09:00"
     },
     {
       "a": "var(--danger)",
       "label": "Damnificadas / aisladas",
       "val": "249 / 283",
-      "foot": "Ñiquén 80 damnif. · Ninhue 91 aisladas · Coelemu 95"
+      "foot": "Ñiquén 80 damnif. · Ninhue 91 aisladas · 146-D"
     },
     {
       "a": "var(--danger)",
       "label": "Sin electricidad",
       "val": "12.946",
-      "foot": "4,7% regional · Yungay 6.418 · SEC (146-D)"
+      "foot": "4,7% · Yungay 6.418 · 146-D · verificar apps.sec.cl"
     },
     {
-      "a": "var(--danger)",
-      "label": "Rutas troncales cortadas",
-      "val": "2",
-      "vsmall": false,
-      "foot": "N-14-O (recortada) y N-42 · + N-705 El Carmen"
+      "a": "var(--amarilla)",
+      "label": "Red vial troncal",
+      "val": "N-42",
+      "vsmall": true,
+      "foot": "único corte · N-14-O rehabilitada 10:01"
     },
     {
       "a": "var(--b-azul)",
-      "label": "Frente cede hoy",
-      "val": "chubascos AM",
-      "vsmall": true,
-      "foot": "decrecientes · lunes aislados · martes estable"
+      "label": "Agua caída 24 h",
+      "val": "38,8 mm",
+      "foot": "hoy 15–20 mm más de chubascos + tormenta (DMC)"
     }
   ],
   "alertMap": {
@@ -422,7 +421,7 @@ const DATOS_POR_DEFECTO = {
     "El Carmen": "roja",
     "Pemuco": "roja",
     "Pinto": "roja",
-    "Quillón": "roja crecida",
+    "Quillón": "roja",
     "San Ignacio": "roja",
     "Yungay": "roja",
     "Coihueco": "roja",
@@ -469,7 +468,7 @@ const DATOS_POR_DEFECTO = {
       "flow": "28",
       "um": "amarillo",
       "tr": "down",
-      "note": "bajó del umbral rojo · Alerta Roja de Quillón sigue vigente"
+      "note": "bajó del umbral rojo · SENAPRED desescaló Quillón a AMARILLA (11:05)"
     },
     {
       "rio": "Río Itata",
@@ -639,7 +638,7 @@ const DATOS_POR_DEFECTO = {
     {
       "tipo": "flood",
       "loc": "Onda de crecida del Itata bajo · SUBIENDO",
-      "d": "<b>Puente Coelemu (3.930 m³/s) y Balsa Nueva Aldea (1.580) pasaron a umbral amarillo y siguen en alza</b> (DGA 09:00) mientras el resto de la cuenca alta ya recibe menos lluvia. Vigilancia de sectores ribereños en <b>Coelemu, Ránquil y Trehuaco</b> durante las próximas horas."
+      "d": "<b>Puente Coelemu (3.930 m³/s) y Balsa Nueva Aldea (1.580) pasaron a umbral amarillo y siguen en alza</b> (DGA 09:00) mientras el resto de la cuenca alta ya recibe menos lluvia. Vigilancia de sectores ribereños en <b>Coelemu, Ránquil y Trehuaco</b> durante las próximas horas. Con 15–20 mm adicionales pronosticados para hoy sobre cuenca saturada, la vigilancia se extiende al menos hasta mañana."
     },
     {
       "tipo": "flood",
@@ -648,8 +647,8 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "tipo": "flood",
-      "loc": "Quillón · Coyanco bajó del rojo; Roja vigente",
-      "d": "El estero descendió a umbral amarillo tras el peak de las 21:25. La <b>Alerta Roja por crecida sigue vigente</b> mientras SENAPRED no la cancele; mantener restricción de cruce de esteros y monitoreo de La Esmeralda y Alto Culturía (35 aisladas, puente colapsado)."
+      "loc": "Quillón · desescalada a Alerta Amarilla (Informe Diario 11:05)",
+      "d": "El Coyanco descendió del umbral rojo tras el peak de anoche y SENAPRED <b>desescaló la alerta de Quillón a Amarilla</b> por crecida. Mantener monitoreo de La Esmeralda y Alto Culturía: persisten <b>35 aisladas y el puente colapsado</b> sobre el estero."
     },
     {
       "tipo": "flood",
@@ -671,11 +670,11 @@ const DATOS_POR_DEFECTO = {
       "d": "clientes sin suministro (<b>4,7%</b> regional) al corte del 146-D, en mejora desde el peak nocturno: <b>Yungay 6.418</b> · El Carmen 1.550 · Pemuco 1.267 · Coelemu 987 · Cobquecura 917 · San Ignacio 785 · Bulnes 176. — SEC."
     },
     {
-      "c": "var(--b-rojo)",
+      "c": "var(--b-naranja)",
       "ic": "road",
       "t": "Conectividad vial",
-      "big": "N-14-O y N-42 cortadas",
-      "d": "La <b>N-14-O volvió a interrumpirse</b> por remociones; N-42 sigue cortada en km 13,5. <b>Nueva: N-705 (Santa Margarita, El Carmen) cortada por caída de poste</b>. N-55: cadenas desde km 69 + socavón km 28. Persisten N-236, N-309, N-319, N-228, N-339, N-888, ~30 puntos vecinales y 3 puentes colapsados. — Carabineros/MOP 07:20."
+      "big": "N-42: único corte troncal",
+      "d": "<b>N-14-O nuevamente operativa</b> (monitoreo 10:01); N-42 sigue cortada en km 13,5 por desprendimiento. N-55: cadenas obligatorias desde km 69. Persisten cortes en secundarias/vecinales del 146-D y <b>3 puentes colapsados</b>. Aeródromo Chillán <b>operativo</b> 08:30–18:31 (DGAC 10:34). — Vialidad/Carabineros."
     },
     {
       "c": "var(--b-morado)",
@@ -710,31 +709,31 @@ const DATOS_POR_DEFECTO = {
       "ic": "air",
       "t": "Calidad del aire (GEC)",
       "big": "Bueno",
-      "d": "Pronóstico oficial MMA <b>Bueno también para mañana domingo 2</b> (00:00–23:59). Sin episodio crítico declarado. Período GEC hasta el 30-sep — verificar diariamente en airechile.mma.gob.cl."
+      "d": "Pronóstico oficial MMA <b>Bueno para hoy domingo 2</b> (00:00–23:59). Sin episodio crítico declarado. Período GEC hasta el 30-sep."
     },
     {
       "c": "var(--b-azul)",
       "ic": "drop",
       "t": "Pluviometría y radiación UV",
-      "big": "11,6 mm / 24 h",
-      "d": "Chillán: <b>11,6 mm en 24 h</b> · acumulado anual <b>489,9 mm</b> (déficit −23,2%) — DMC 18:50; la lluvia vespertina se reflejará en el corte de mañana. UV pronosticado dom 2: <b>1–2 (bajo)</b>. ATP zoosanitaria regional vigente."
+      "big": "38,8 mm / 24 h",
+      "d": "Chillán: <b>38,8 mm</b> en 24 horas (DMC 10:31) — el registro del temporal. Acumulado anual <b>528,7 mm</b>; el déficit se reduce de −23,2% a <b>−17,7%</b>. UV hoy: 1–2 (bajo). ATP zoosanitaria regional vigente."
     }
   ],
   "forecast": [
     {
       "dia": "Domingo 2-ago",
-      "temp": "9° / 13°C",
-      "cielo": "Mañana: chubascos decrecientes con probable tormenta eléctrica · tarde mejora gradual · nevadas y ventisca en cordillera (rachas 70)",
+      "temp": "máx 14°C",
+      "cielo": "Tarde: nublado, chubascos y probable tormenta eléctrica · 15–20 mm valle, 25–30 mm precordillera · nevadas y ventisca en cordillera (35–45 cm, rachas 70)",
       "viento": "25–40 km/h",
       "iso": "2.100–1.900 m",
       "hl": true,
-      "flag": "Hoy · frente cede",
-      "precip": "AA118-1 venció en la madrugada"
+      "flag": "Post-frontal",
+      "precip": "sobre suelos saturados · Itata bajo en alza"
     },
     {
       "dia": "Lunes 3-ago",
       "temp": "8° / 15°C",
-      "cielo": "Madrugada chubascos aislados · resto nublado · chubascos de nieve débiles en cordillera (rachas 50)",
+      "cielo": "Nubosidad parcial variando a nublado · 1–3 mm · chubascos de nieve a agua en cordillera (rachas 50)",
       "viento": "moderado",
       "iso": "1.900–2.600 m en ascenso",
       "hl": false
@@ -742,7 +741,7 @@ const DATOS_POR_DEFECTO = {
     {
       "dia": "Martes 4-ago",
       "temp": "9° / 14°C",
-      "cielo": "Nublado, estable · chubascos débiles aislados en cordillera",
+      "cielo": "Nublado a cubierto, estable · 1–3 mm aislados · chubascos débiles en cordillera",
       "viento": "hasta 40 km/h",
       "iso": "2.600–2.100 m",
       "hl": false
@@ -750,21 +749,21 @@ const DATOS_POR_DEFECTO = {
   ],
   "avisos": [
     {
-      "when": "sáb 1 – dom 2 ago",
+      "when": "hasta tarde hoy dom 2",
+      "tt": "<span class=\"mtag\">Aviso</span> Probables tormentas eléctricas",
+      "cov": "Ñuble y Biobío",
+      "code": "A373-4 2026 · emitido 01-08 09:41",
+      "b": "now"
+    },
+    {
+      "when": "hasta hoy dom 2",
       "tt": "<span class=\"mtag\">Aviso</span> Probables trombas marinas (nubes convectivas)",
       "cov": "Litoral",
       "code": "DMC/SERVIMET · emitido 30-07 19:08",
       "b": "now"
     },
     {
-      "when": "hasta tarde dom 2",
-      "tt": "<span class=\"mtag\">Aviso</span> Probables tormentas eléctricas",
-      "cov": "Región de Ñuble",
-      "code": "A373-4 2026 · emitido 01-08 09:41",
-      "b": "now"
-    },
-    {
-      "when": "hasta tarde dom 2",
+      "when": "hasta tarde hoy dom 2",
       "tt": "<span class=\"mtag\">Aviso</span> Viento normal a moderado",
       "cov": "Cordillera",
       "code": "365-6 2026 · emitido 01-08 07:31",
@@ -795,37 +794,42 @@ const DATOS_POR_DEFECTO = {
   "fuentes": [
     {
       "n": "SENAPRED",
-      "t": "02-08 10:40 · Informe 146-D",
+      "t": "02-08 11:05 · Informe Diario AM + 146-D",
       "st": "ok"
     },
     {
       "n": "DGA (cauces)",
-      "t": "02-08 09:00 · Itata bajo subiendo",
+      "t": "02-08 09:00 · confirmado 11:05",
+      "st": "ok"
+    },
+    {
+      "n": "DMC (amenaza + pronóstico)",
+      "t": "02-08 09:45 / 10:29",
+      "st": "ok"
+    },
+    {
+      "n": "DMC (pluviometría)",
+      "t": "02-08 10:31 · 38,8 mm/24h",
       "st": "ok"
     },
     {
       "n": "SEC (electricidad)",
-      "t": "146-D · 12.946 (4,7%)",
-      "st": "ok"
+      "t": "146-D · 12.946 · verificar en línea",
+      "st": "warn"
     },
     {
       "n": "Vialidad MOP / Carabineros",
-      "t": "02-08 07:20 · N-14-O recortada",
+      "t": "02-08 10:01 · N-14-O operativa",
       "st": "ok"
     },
     {
-      "n": "DMC (pronóstico + avisos)",
-      "t": "4 avisos vigentes · frente cede",
-      "st": "ok"
-    },
-    {
-      "n": "Municipalidades (albergues)",
-      "t": "02-08 06:50 · 8 activos",
+      "n": "DGAC (aeródromo)",
+      "t": "02-08 10:34 · operativo",
       "st": "ok"
     },
     {
       "n": "MMA (calidad del aire)",
-      "t": "02-08 · Bueno",
+      "t": "02-08 · Bueno (oficial)",
       "st": "ok"
     },
     {
@@ -834,13 +838,8 @@ const DATOS_POR_DEFECTO = {
       "st": "ok"
     },
     {
-      "n": "SEREMI Educación",
-      "t": "31-07 05:28",
-      "st": "warn"
-    },
-    {
-      "n": "SUBTEL · SISS/DOH",
-      "t": "02-08 · s/afectación",
+      "n": "Municipalidades (albergues)",
+      "t": "02-08 06:50 · 8 activos · 44",
       "st": "ok"
     },
     {
@@ -849,9 +848,9 @@ const DATOS_POR_DEFECTO = {
       "st": "ok"
     },
     {
-      "n": "CONAF · CSN/SHOA",
-      "t": "sin novedades",
-      "st": "ok"
+      "n": "SEREMI Educación · CONAF · CSN/SHOA",
+      "t": "sin novedades nuevas",
+      "st": "warn"
     }
   ],
   "equipos": []
