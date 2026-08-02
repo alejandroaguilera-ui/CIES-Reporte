@@ -357,24 +357,24 @@
    ============================================================ */
 const DATOS_POR_DEFECTO = {
   "meta": {
-    "reporte": "Modificación SENAPRED · Amarilla por crecida",
-    "envio": "02-08-2026 · tarde",
-    "base": "Roja Regional meteorológica vigente · crecidas DESESCALADAS a Amarilla en 11 comunas · afectación 146-D 07:00 · vial 10:01",
+    "reporte": "ATR N°68-A · Informe de Emergencia N°146-E",
+    "envio": "02-08-2026 · 16:18 · Informe 146-E (corte personas 15:00)",
+    "base": "Roja Regional meteorológica vigente · crecida Amarilla (admin.) en 11 comunas · DGA 13:00 mantiene Itata en Pte. Coelemu (subiendo) y Lonquén (bajando) sobre umbral rojo · afectación 146-E 15:00 · vial 07:20",
     "estado": "ALERTA ROJA REGIONAL · SISTEMA FRONTAL",
     "tono": "red",
-    "srcNote": "Fuentes base: <b>Modificación de alertamiento SENAPRED (02-08, tarde)</b> — Amarilla por crecida en 11 comunas, desescala las Rojas del Itata (ATR 68-A) y del Lonquén + Informe Diario AM 11:05 + Informe N°146-D. Cauces: DGA · Vial 10:01 · Energía: SEC (146-D).",
-    "tickMap": "Roja Regional meteorológica vigente en las 21 comunas · ≈ = Amarilla por crecida (ríos Itata y Lonquén) en 11 comunas: Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás — DESESCALADA desde Roja (modificación SENAPRED de esta tarde)",
-    "tickCauce": "DGA · según desescalada SENAPRED de la tarde: Itata en Pte. Coelemu y Lonquén bajaron del umbral rojo · en umbral amarillo con tendencia a la baja · confirmar caudales con próximo corte DGA",
-    "tickAfect": "Informe N°146-D · consulta 02-ago 07:00 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
+    "srcNote": "Fuentes base: <b>Informe de Emergencia SENAPRED N°146-E</b> (envío 02-08 16:00; afectación 15:00, albergues 06:50, vial 07:20, cauces DGA 13:00) + ATR N°68-A (Res. ex. N°85, 13:20) y modificación de alertamiento SENAPRED de la tarde (Amarilla por crecida en 11 comunas). Energía: SEC (146-E). Volcán: SERNAGEOMIN.",
+    "tickMap": "Roja Regional meteorológica vigente en las 21 comunas · ≈ = Amarilla por crecida (ríos Itata y Lonquén) en 11 comunas: Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás (modificación SENAPRED de la tarde). Nota: la lectura DGA de las 13:00 (146-E) aún mantiene 2 cauces sobre umbral rojo",
+    "tickCauce": "DGA · consulta 02-ago 13:00 (Informe 146-E): Alerta Roja en río Lonquén (Trehuaco, bajando) y río Itata (Pte. Coelemu, SUBIENDO); Amarilla en Itata (Balsa Nueva Aldea, estable); Coyanco descendió a Azul. El resumen DGA no publica caudales (m³/s): s/d",
+    "tickAfect": "Informe N°146-E · consulta 02-ago 15:00 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
     "tickSrc": "Última consulta por plataforma · verde = dato del día · amarillo = dato anterior o por confirmar",
-    "afectNote": "Total regional: <b>1.171 afectadas</b>, <b>249 damnificadas</b> (Ñiquén 80 · San Ignacio 40 · Pemuco 25 · Coelemu 22), <b>44 albergadas</b> en <b>8 albergues</b> (nuevos: Coihueco y San Carlos), <b>283 aisladas</b>, <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>228 en evaluación</b> · <b>175 con daño</b> (147 menor / 22 mayor / <b>6 destruidas</b>). Nota: tabla comunal y listado de albergues presentan diferencias en Portezuelo, Coihueco y Cobquecura — verificar con SENAPRED.",
+    "afectNote": "Total regional: <b>1.205 afectadas</b>, <b>281 damnificadas</b> (Ñiquén 80 · San Ignacio 40 · San Nicolás 26 · Bulnes 26 · Pemuco 25 · Coelemu 22 · Quillón 18 · Chillán 18 · Portezuelo 17), <b>42 albergadas</b> en <b>8 albergues</b>, <b>388 aisladas</b> (+105 vs. 146-D), <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>240 en evaluación</b> · <b>198 con daño</b> (164 menor / 28 mayor / <b>6 destruidas</b>). Fuente: Municipalidades (corte 15:00, Informe 146-E).",
     "footNote": "Panel informativo de emergencia — Gobierno Regional de Ñuble · Versión para difusión. Alerta Roja regional vigente; cifras oficiales en evolución (SENAPRED, DGA, DMC, SEC, MOP, MMA)."
   },
   "banner": {
     "tono": "amber",
-    "etop": "Modificación de alertamiento SENAPRED · 02-08 · tarde",
-    "titulo": "Desescalada: las Rojas por crecida bajan a Amarilla en las 11 comunas de ambas cuencas",
-    "texto": "SENAPRED modificó la cobertura del alertamiento: <b>Alerta Amarilla por crecida para Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás</b>, desescalando la Roja del río Itata (ATR 68-A de las 13:20) y la Roja del Lonquén vigente desde el 31-jul. La lectura hidrológica: <b>los caudales bajaron de los umbrales rojos</b> tras el paso del peak por Puente Coelemu. Se mantiene la <b>Alerta Roja Regional meteorológica</b> y la condición de Amarilla exige <b>monitoreo continuo de ambos cauces</b> — con chubascos post-frontales aún en desarrollo esta tarde (15–20 mm pronosticados) y suelos saturados, una reactivación no es descartable. No desmovilizar la vigilancia ribereña en Coelemu, Ránquil y Trehuaco hasta confirmar tendencia sostenida a la baja en el próximo corte DGA."
+    "etop": "Informe de Emergencia SENAPRED N°146-E · 02-08 · 16:00",
+    "titulo": "Emergencia activa: los aislados suben a 388 y la DGA mantiene el Itata en Puente Coelemu sobre umbral rojo y en ascenso",
+    "texto": "El <b>Informe N°146-E</b> (corte de personas 15:00) eleva los <b>aislados a 388 (+105 vs. 146-D)</b> y los <b>damnificados a 281</b>, con un nuevo foco en San Fabián (89 aislados) y ampliación en Coelemu (95), Ninhue (91), Quillón (35), Bulnes (27) y Ránquil (25). En lo hidrológico, la DGA (13:00) mantiene en <b>Alerta Roja el río Lonquén en Trehuaco (bajando) y el río Itata en Puente Coelemu, este último SUBIENDO</b>; el estero Coyanco descendió a Alerta Azul. En lo administrativo rige la <b>Alerta Amarilla por crecida en las 11 comunas</b> de ambas cuencas (modificación SENAPRED de la tarde), pero la lectura de cauces exige <b>no desmovilizar la vigilancia ribereña</b> en Coelemu, Ránquil y Trehuaco. Mejora la energía: <b>11.417 clientes sin suministro (4,2%)</b>, baja desde 12.946."
   },
   "kpis": [
     {
@@ -382,25 +382,25 @@ const DATOS_POR_DEFECTO = {
       "label": "Alerta regional vigente",
       "val": "Roja",
       "vsmall": false,
-      "foot": "Meteorológica vigente · crecidas desescaladas a Amarilla (11 comunas)"
+      "foot": "Meteorológica vigente · crecida Amarilla admin. (11 comunas) · DGA mantiene 2 cauces en rojo"
     },
     {
-      "a": "var(--amarilla)",
+      "a": "var(--rojo)",
       "label": "Cauces sobre umbral",
-      "val": "0R · ~3A",
-      "foot": "Itata Pte. Coelemu y Lonquén bajaron del rojo · confirmar con DGA"
+      "val": "2R · 1A",
+      "foot": "Itata Pte. Coelemu (subiendo) y Lonquén (bajando) en rojo · Coyanco a azul · DGA 13:00"
     },
     {
       "a": "var(--danger)",
       "label": "Damnificadas / aisladas",
-      "val": "249 / 283",
-      "foot": "Ñiquén 80 damnif. · Ninhue 91 aisladas · 146-D"
+      "val": "281 / 388",
+      "foot": "aisladas +105 · Coelemu 95 · Ninhue 91 · San Fabián 89 · 146-E"
     },
     {
       "a": "var(--danger)",
       "label": "Sin electricidad",
-      "val": "12.946",
-      "foot": "4,7% · Yungay 6.418 · 146-D · verificar apps.sec.cl"
+      "val": "11.417",
+      "foot": "4,2% regional · baja desde 12.946 · 146-E 16:00 · apps.sec.cl"
     },
     {
       "a": "var(--amarilla)",
@@ -441,76 +441,76 @@ const DATOS_POR_DEFECTO = {
   },
   "cauces": [
     {
-      "rio": "Río Lonquén",
-      "est": "Trehuaco",
-      "flow": "488",
-      "um": "amarillo",
-      "tr": "down",
-      "note": "bajó del umbral rojo · desescalada a Amarilla (11 comunas ambas cuencas)"
-    },
-    {
       "rio": "Río Itata",
       "est": "Puente Coelemu",
-      "flow": "3.930",
-      "um": "amarillo",
+      "flow": "s/d",
+      "um": "rojo",
+      "tr": "up",
+      "note": "DGA 13:00 (146-E): sobre umbral rojo y SUBIENDO — vigilancia prioritaria. Caudal no publicado en el resumen."
+    },
+    {
+      "rio": "Río Lonquén",
+      "est": "Trehuaco",
+      "flow": "s/d",
+      "um": "rojo",
       "tr": "down",
-      "note": "bajó del umbral rojo (peak superado) · desescalada a Amarilla · confirmar caudal DGA"
+      "note": "DGA 13:00 (146-E): sobre umbral rojo, bajando niveles. Caudal no publicado en el resumen."
     },
     {
       "rio": "Río Itata",
       "est": "Balsa Nueva Aldea",
-      "flow": "1.580",
+      "flow": "s/d",
       "um": "amarillo",
-      "tr": "up",
-      "note": "umbral amarillo · tendencia a la baja tras paso del peak"
+      "tr": "down",
+      "note": "DGA 13:00 (146-E): umbral amarillo, nivel estable."
     },
     {
       "rio": "Estero Coyanco",
-      "est": "Puente Coyanco PCF",
-      "flow": "28",
-      "um": "amarillo",
+      "est": "Puente Coyanco",
+      "flow": "s/d",
+      "um": "azul",
       "tr": "down",
-      "note": "bajó del umbral rojo · SENAPRED desescaló Quillón a AMARILLA (11:05)"
+      "note": "DGA 13:00 (146-E): descendió a Alerta Azul (desde rojo). Quillón en Amarilla admin."
     },
     {
       "rio": "Río Itata",
       "est": "Paso Hondo",
-      "flow": "3.601",
+      "flow": "s/d",
       "um": "azul",
-      "tr": "up",
-      "note": "sobre umbral azul (2.996) · en alza"
+      "tr": "down",
+      "note": "DGA 13:00 (146-E): alerta azul."
     },
     {
       "rio": "Río Itata",
       "est": "General Cruz",
-      "flow": "713",
+      "flow": "s/d",
       "um": "azul",
-      "tr": "up",
-      "note": "sobre umbral azul (362) · en alza"
+      "tr": "down",
+      "note": "DGA 13:00 (146-E): alerta azul."
     },
     {
       "rio": "Río Ñuble",
       "est": "Confluencia",
-      "flow": "1.679",
+      "flow": "s/d",
       "um": "azul",
       "tr": "down",
-      "note": "sobre umbral azul (1.456) · oscilante"
+      "note": "DGA 13:00 (146-E): alerta azul."
     },
     {
       "rio": "Río Chillán",
-      "est": "Esperanza N°2",
-      "flow": "96",
+      "est": "Esperanza",
+      "flow": "s/d",
       "um": "azul",
       "tr": "down",
-      "note": "volvió a azul (95) · en descenso"
+      "note": "DGA 13:00 (146-E): alerta azul (también azul en camino a Confluencia)."
     },
     {
       "rio": "Río Larqui",
       "est": "Santa Cruz de Cuca",
-      "flow": "—",
+      "flow": "s/d",
       "um": "azul",
-      "tr": "up",
-      "note": "alerta azul (DGA 09:00) · resumen oficial"
+      "tr": "down",
+      "note": "DGA 13:00 (146-E): alerta azul."
     }
   ],
   "volcano": {
@@ -531,14 +531,14 @@ const DATOS_POR_DEFECTO = {
       "ev": 0,
       "dam": 80,
       "ai": 0,
-      "vd": 81
+      "vd": 85
     },
     {
       "c": "Ninhue",
       "ev": 0,
       "dam": 2,
       "ai": 91,
-      "vd": 2
+      "vd": 4
     },
     {
       "c": "San Ignacio",
@@ -557,16 +557,16 @@ const DATOS_POR_DEFECTO = {
     {
       "c": "Quillón",
       "ev": 0,
-      "dam": 11,
+      "dam": 18,
       "ai": 35,
-      "vd": 4
+      "vd": 7
     },
     {
       "c": "San Nicolás",
       "ev": 0,
-      "dam": 21,
+      "dam": 26,
       "ai": 14,
-      "vd": 7
+      "vd": 11
     },
     {
       "c": "Chillán",
@@ -578,15 +578,15 @@ const DATOS_POR_DEFECTO = {
     {
       "c": "Bulnes",
       "ev": 0,
-      "dam": 12,
+      "dam": 26,
       "ai": 27,
-      "vd": 4
+      "vd": 9
     },
     {
       "c": "Ránquil",
       "ev": 30,
       "dam": 0,
-      "ai": 9,
+      "ai": 25,
       "vd": 0
     },
     {
@@ -613,54 +613,54 @@ const DATOS_POR_DEFECTO = {
     {
       "c": "Portezuelo",
       "ev": 0,
-      "dam": 6,
+      "dam": 17,
       "ai": 0,
-      "vd": 3
+      "vd": 10
     },
     {
-      "c": "Chillán Viejo",
+      "c": "San Fabián",
       "ev": 0,
-      "dam": 5,
-      "ai": 0,
-      "vd": 2
+      "dam": 0,
+      "ai": 89,
+      "vd": 0
     }
   ],
   "comunaTotal": {
     "ev": "80",
-    "dam": "249",
-    "ai": "283",
-    "vd": "175"
+    "dam": "281",
+    "ai": "388",
+    "vd": "198"
   },
   "special": [
     {
       "tipo": "flood",
-      "loc": "Ninhue · aislamiento sube a 91 personas",
-      "d": "La Quinta 54 · Coipín (callejón Los Suspiros) 16 · <b>El Rincón 16 y Dubái Hualte 5 (sectores nuevos)</b>. En Ránquil se suman 9 aisladas en Navas por socavón de camino vecinal. Total regional: <b>283 aisladas</b>."
+      "loc": "Aislamiento regional sube a 388 personas (+105)",
+      "d": "Nuevos y ampliados focos por crecida y socavones: <b>Coelemu 95 · Ninhue 91 (La Quinta 54, El Rincón 16, Coipín 16, Dubái Hualte 5) · San Fabián 89 (foco nuevo) · Quillón 35 · Bulnes 27 (Los Pinos) · Ránquil 25 (Navas)</b>. Total regional: <b>388 aisladas</b> según Informe 146-E (corte 15:00)."
     },
     {
       "tipo": "flood",
-      "loc": "Ríos Itata y Lonquén · DESESCALADA a Amarilla (tarde 02-08)",
-      "d": "SENAPRED modificó el alertamiento a <b>Amarilla por crecida en las 11 comunas</b> de ambas cuencas tras el descenso de los caudales bajo umbral rojo. Condición Amarilla = <b>monitoreo reforzado, no repliegue</b>: mantener observación ribereña en Coelemu, Ñipas/Ránquil y Trehuaco al menos hasta confirmar 12 horas de tendencia sostenida a la baja, considerando los chubascos post-frontales de esta tarde."
+      "loc": "Ríos Itata y Lonquén · Amarilla admin., pero DGA los mantiene en rojo (13:00)",
+      "d": "En lo administrativo rige <b>Alerta Amarilla por crecida en las 11 comunas</b> de ambas cuencas (modificación SENAPRED de la tarde). Sin embargo, el Informe 146-E incorpora la lectura DGA de las 13:00 que mantiene en <b>Alerta Roja el Lonquén en Trehuaco (bajando) y el Itata en Puente Coelemu (SUBIENDO)</b>. Condición: <b>monitoreo reforzado, no repliegue</b> — observación ribereña en Coelemu, Ñipas/Ránquil y Trehuaco hasta confirmar tendencia sostenida a la baja."
     },
     {
       "tipo": "flood",
-      "loc": "Ñiquén · nuevo foco de daño habitacional",
-      "d": "Salto nocturno: <b>80 damnificadas, 81 viviendas con daño menor y 90 en evaluación</b> (antes: 56 damnificadas / 51 viviendas). Concentra un tercio del daño habitacional regional; priorizar catastro FIBE y apoyo municipal."
+      "loc": "Ñiquén · principal foco de daño habitacional",
+      "d": "<b>80 damnificadas, 85 viviendas con daño (85 menor) y 90 en evaluación</b>. Concentra el mayor daño habitacional de la región; priorizar catastro FIBE y apoyo municipal."
     },
     {
       "tipo": "flood",
-      "loc": "Quillón · en Amarilla por crecida (tercer cambio del día)",
-      "d": "Trayectoria del día: Roja por Coyanco (anoche) → Amarilla (11:05) → Roja por Itata (13:20) → <b>Amarilla (tarde)</b>. Persisten 35 aisladas en La Esmeralda y Alto Culturía y el puente colapsado. La volatilidad del alertamiento refuerza la necesidad de mantener el contacto directo con el municipio."
+      "loc": "Quillón · sube a 18 damnificadas · persiste aislamiento",
+      "d": "Trayectoria del día: Roja por Coyanco (anoche) → Roja por Itata (13:20) → <b>Amarilla (tarde)</b>; el Coyanco descendió a Azul (DGA 13:00). Persisten <b>35 aisladas</b> (La Esmeralda, Alto Culturía) y el puente colapsado sobre el estero Coyanco. 18 damnificadas y 7 viviendas con daño (146-E)."
     },
     {
       "tipo": "flood",
-      "loc": "Energía · 12.946 clientes, foco en precordillera de Diguillín",
-      "d": "Mejora desde el peak nocturno (~18.750) pero con concentración crítica: <b>Yungay 6.418 · El Carmen 1.550 · Pemuco 1.267</b> · Coelemu 987 · Cobquecura 917 · San Ignacio 785. 4,7% regional (SEC, 146-D). Requerir tiempos de reposición a CGE/Frontel; atención a electrodependientes."
+      "loc": "Energía · 11.417 clientes sin suministro (4,2%)",
+      "d": "Continúa la mejora: <b>11.417 clientes afectados (4,2% regional)</b> al corte del 146-E (16:00), baja desde 12.946 (146-D) y desde el peak nocturno (~18.750). El 146-E entrega solo el total regional; el desglose por comuna (precordillera de Diguillín en el 146-D) debe verificarse en apps.sec.cl. Atención a electrodependientes."
     },
     {
       "tipo": "flood",
       "loc": "Solicitud del 2% constitucional de emergencia · GORE",
-      "d": "Solicitud del Gobernador al Presidente (01-08) para reparar infraestructura, apoyar familias y recuperar sistemas productivos; parlamentarios piden además <b>emergencia agrícola</b>. El 146-D refuerza el caso: 175 viviendas dañadas, socavón de 170 m en ribera del Ñuble, 3 puentes colapsados y red vial rural con ~30 puntos de corte."
+      "d": "Solicitud del Gobernador al Presidente (01-08) para reparar infraestructura, apoyar familias y recuperar sistemas productivos; parlamentarios piden además <b>emergencia agrícola</b>. El 146-E refuerza el caso: <b>198 viviendas con daño</b>, socavón de 170 m en ribera del Ñuble (San Carlos), puentes colapsados (El Huemul, Estero Navidad, Alto Culturía) y red vial rural con decenas de puntos de corte."
     }
   ],
   "tiles": [
@@ -668,15 +668,15 @@ const DATOS_POR_DEFECTO = {
       "c": "var(--b-rojo)",
       "ic": "bolt",
       "t": "Energía eléctrica",
-      "big": "12.946",
-      "d": "clientes sin suministro (<b>4,7%</b> regional) al corte del 146-D, en mejora desde el peak nocturno: <b>Yungay 6.418</b> · El Carmen 1.550 · Pemuco 1.267 · Coelemu 987 · Cobquecura 917 · San Ignacio 785 · Bulnes 176. — SEC."
+      "big": "11.417",
+      "d": "clientes sin suministro (<b>4,2%</b> regional) al corte del 146-E (16:00), en baja desde 12.946 (146-D) y el peak nocturno (~18.750). El 146-E entrega solo el total regional; el desglose por comuna (foco en precordillera de Diguillín: Yungay, El Carmen, Pemuco) debe verificarse en apps.sec.cl. — SEC."
     },
     {
       "c": "var(--b-naranja)",
       "ic": "road",
       "t": "Conectividad vial",
-      "big": "N-42: único corte troncal",
-      "d": "<b>N-14-O nuevamente operativa</b> (monitoreo 10:01); N-42 sigue cortada en km 13,5 por desprendimiento. N-55: cadenas obligatorias desde km 69. Persisten cortes en secundarias/vecinales del 146-D y <b>3 puentes colapsados</b>. Aeródromo Chillán <b>operativo</b> 08:30–18:31 (DGAC 10:34). — Vialidad/Carabineros."
+      "big": "N-42 y N-14-O cortadas",
+      "d": "El 146-E (vial 07:20) mantiene interrumpidas <b>N-42</b> (km 13,5, desprendimiento) y <b>N-14-O</b> (remoción en masa); el monitoreo posterior de las 10:01 reportó la N-14-O nuevamente operativa. N-55: cadenas obligatorias desde km 69. Decenas de cortes en secundarias/vecinales y <b>puentes colapsados</b> (El Huemul, Estero Navidad, Alto Culturía). — Vialidad/Carabineros."
     },
     {
       "c": "var(--b-morado)",
@@ -696,8 +696,8 @@ const DATOS_POR_DEFECTO = {
       "c": "var(--b-rojo)",
       "ic": "pin",
       "t": "Albergues",
-      "big": "8 activos · 44 personas",
-      "d": "Quillón 9 · Ránquil 7 · Ninhue 6 · Portezuelo 4 · <b>San Carlos 4 y Coihueco (Marta Colvin) 3 — nuevos</b> · San Nicolás 2 · Coelemu habilitado sin ocupación · Ñiquén (evento anterior) 4. Cobquecura registra 6 albergadas en tabla comunal sin establecimiento listado."
+      "big": "8 activos · 42 personas",
+      "d": "Quillón 9 · Ránquil 7 (Esc. Ñipas) · Ninhue 6 · San Carlos 4 · Ñiquén (evento anterior) 4 · <b>San Nicolás 3 (Sede Curica — nuevo)</b> · Portezuelo 3 · Coelemu habilitado sin ocupación. Coihueco sale del listado; Cobquecura mantiene 6 albergadas en tabla sin establecimiento informado. (Albergues 06:50; total albergadas 42 al corte 15:00.)"
     },
     {
       "c": "var(--b-verde)",
@@ -796,12 +796,12 @@ const DATOS_POR_DEFECTO = {
   "fuentes": [
     {
       "n": "SENAPRED",
-      "t": "02-08 tarde · Amarilla crecida 11 comunas",
+      "t": "02-08 16:00 · Informe 146-E",
       "st": "ok"
     },
     {
       "n": "DGA (cauces)",
-      "t": "vía desescalada SENAPRED · confirmar caudales",
+      "t": "02-08 13:00 · Itata Coelemu y Lonquén en rojo · caudal s/d",
       "st": "warn"
     },
     {
@@ -816,12 +816,12 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "n": "SEC (electricidad)",
-      "t": "146-D · 12.946 · verificar en línea",
+      "t": "146-E · 11.417 (4,2%) · verificar en línea",
       "st": "warn"
     },
     {
       "n": "Vialidad MOP / Carabineros",
-      "t": "02-08 10:01 · N-14-O operativa",
+      "t": "146-E 07:20 / monitoreo 10:01",
       "st": "ok"
     },
     {
@@ -841,7 +841,7 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "n": "Municipalidades (albergues)",
-      "t": "02-08 06:50 · 8 activos · 44",
+      "t": "02-08 06:50 · 8 activos · 42",
       "st": "ok"
     },
     {
