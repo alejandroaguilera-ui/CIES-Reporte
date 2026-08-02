@@ -355,14 +355,14 @@
    ============================================================ */
 const DATOS_POR_DEFECTO = {
   "meta": {
-    "reporte": "Informe Diario AM + N°146-D",
-    "envio": "02-08-2026 · 11:05",
-    "base": "Alertas confirmadas 11:05 · afectación 146-D 07:00 · vial 10:01 · cauces DGA 09:00 · pluviometría 10:31 · DMC 10:29",
+    "reporte": "ATR N°68-A · Roja crecida río Itata",
+    "envio": "02-08-2026 · 13:20",
+    "base": "Roja Regional + Roja crecida en 11 comunas (Lonquén + Itata, ATR 68-A 13:20) · afectación 146-D 07:00 · vial 10:01 · pluviometría 10:31",
     "estado": "ALERTA ROJA REGIONAL · SISTEMA FRONTAL",
     "tono": "red",
-    "srcNote": "Fuentes base: <b>Informe de Monitoreo Diario Regional AM (02-08 11:05)</b> + <b>Informe N°146-D</b> (10:40) + <b>Informe de Amenaza Meteorológica DMC</b> (09:45). Vial: Vialidad-MOP/Carabineros 10:01 · Cauces: DGA 09:00 · Pluviometría: DMC 10:31 · Energía: SEC (146-D) · Aeródromo: DGAC 10:34.",
-    "tickMap": "Roja Regional meteorológica en las 21 comunas · ≋ = Roja por crecida Río Lonquén: Trehuaco, Ninhue, Portezuelo y San Nicolás · Quillón DESESCALÓ a Amarilla por crecida del Coyanco (Informe Diario 11:05) · Amarilla crecida río Itata: 9 comunas",
-    "tickCauce": "DGA · 09:00 (146-D) · ROJO: Lonquén (bajando) · AMARILLO: Itata en Pte. Coelemu y Balsa Nueva Aldea (subiendo) y estero Coyanco · estado de alertas confirmado por Informe Diario 11:05",
+    "srcNote": "Fuentes base: <b>ATR N°68-A SENAPRED (Res. ex. N°85, 02-08 13:20)</b> — Roja por crecida río Itata + Informe Diario AM 11:05 + Informe N°146-D + DMC 09:45. Cauces: DGA (Itata en Pte. Coelemu sobre umbral rojo) · Vial 10:01 · Energía: SEC (146-D).",
+    "tickMap": "Roja Regional meteorológica en las 21 comunas · ≋ = Roja por crecida en 11 comunas — río Itata (ATR 68-A, 13:20): Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco · río Lonquén: Ninhue, San Nicolás, Portezuelo y Trehuaco",
+    "tickCauce": "DGA · 13:20 (ATR 68-A) · ROJO: Itata en Puente Coelemu (SUPERÓ UMBRAL, en alza) y Lonquén en Trehuaco · AMARILLO: Itata en Balsa Nueva Aldea y estero Coyanco",
     "tickAfect": "Informe N°146-D · consulta 02-ago 07:00 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
     "tickSrc": "Última consulta por plataforma · verde = dato del día · amarillo = dato anterior o por confirmar",
     "afectNote": "Total regional: <b>1.171 afectadas</b>, <b>249 damnificadas</b> (Ñiquén 80 · San Ignacio 40 · Pemuco 25 · Coelemu 22), <b>44 albergadas</b> en <b>8 albergues</b> (nuevos: Coihueco y San Carlos), <b>283 aisladas</b>, <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>228 en evaluación</b> · <b>175 con daño</b> (147 menor / 22 mayor / <b>6 destruidas</b>). Nota: tabla comunal y listado de albergues presentan diferencias en Portezuelo, Coihueco y Cobquecura — verificar con SENAPRED.",
@@ -370,9 +370,9 @@ const DATOS_POR_DEFECTO = {
   },
   "banner": {
     "tono": "red",
-    "etop": "Informe Diario AM 11:05 + Amenaza Meteorológica DMC 09:45",
-    "titulo": "El frente dejó 38,8 mm; Quillón desescala a Amarilla y quedan chubascos post-frontales esta tarde",
-    "texto": "Carabineros reporta las tres provincias <b>nubladas y sin precipitaciones</b> (10:09): el frente principal pasó, dejando <b>38,8 mm en 24 horas en Chillán</b> (acumulado anual 528,7 mm; el déficit se reduce a −17,7%). SENAPRED <b>desescaló Quillón a Amarilla</b> por el Coyanco — la Roja por crecida queda acotada a las <b>4 comunas del Lonquén</b>, que sigue en rojo pero bajando. Atención con la <b>inestabilidad post-frontal</b>: la DMC pronostica <b>15–20 mm adicionales en el valle</b> hoy (25–30 mm precordillera, 35–45 cm de nieve en cordillera con rachas de 70 km/h) con <b>probable tormenta eléctrica en la tarde</b>, sobre suelos saturados y con el <b>Itata bajo aún subiendo en amarillo</b>. En lo vial, la <b>N-14-O quedó nuevamente operativa</b> (10:01): la N-42 es el único corte troncal. Lunes mejora parcial; martes estable."
+    "etop": "⚠ ATR N°68-A (Res. ex. N°85) · 02-08 · 13:20",
+    "titulo": "El Itata superó el umbral ROJO en Puente Coelemu: Alerta Roja por crecida para 9 comunas",
+    "texto": "La onda de crecida que el panel venía siguiendo desde la mañana se materializó: la estación <b>río Itata en Puente Coelemu sobrepasó el umbral de alerta roja</b> (DGA). SENAPRED canceló la Amarilla y declaró <b>Alerta Roja por crecida del Itata para Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco</b>. Sumadas las 4 comunas del Lonquén, la Roja por crecida cubre ahora <b>11 comunas</b>. Cursos de acción del ATR: difusión a la comunidad, <b>monitoreo de sectores ribereños con desbordes previos</b>, alistamiento de recursos de respuesta y <b>evaluación de evacuaciones preventivas</b> — foco inmediato en riberas de <b>Coelemu (95 aisladas y 100 viviendas ya en evaluación), Ñipas/Ránquil y Trehuaco</b>, con chubascos post-frontales aún pronosticados para esta tarde."
   },
   "kpis": [
     {
@@ -380,13 +380,13 @@ const DATOS_POR_DEFECTO = {
       "label": "Alerta regional vigente",
       "val": "Roja",
       "vsmall": false,
-      "foot": "Meteorológica + Roja por crecida Lonquén (4 comunas) · Quillón desescala"
+      "foot": "Meteorológica + Roja por crecida en 11 comunas (Itata + Lonquén)"
     },
     {
-      "a": "var(--danger)",
-      "label": "Cauces sobre umbral",
-      "val": "1R · 3A",
-      "foot": "Lonquén rojo (bajando) · Itata bajo subiendo · DGA 09:00"
+      "a": "var(--rojo)",
+      "label": "Cauces en umbral rojo",
+      "val": "2",
+      "foot": "Itata en Pte. Coelemu (EN ALZA) · Lonquén · + Balsa N. Aldea amarillo"
     },
     {
       "a": "var(--danger)",
@@ -415,26 +415,26 @@ const DATOS_POR_DEFECTO = {
     }
   ],
   "alertMap": {
-    "Bulnes": "roja",
-    "Chillán": "roja",
+    "Bulnes": "roja crecida",
+    "Chillán": "roja crecida",
     "Chillán Viejo": "roja",
     "El Carmen": "roja",
-    "Pemuco": "roja",
+    "Pemuco": "roja crecida",
     "Pinto": "roja",
-    "Quillón": "roja",
+    "Quillón": "roja crecida",
     "San Ignacio": "roja",
-    "Yungay": "roja",
+    "Yungay": "roja crecida",
     "Coihueco": "roja",
     "Ñiquén": "roja",
     "San Carlos": "roja",
     "San Fabián": "roja",
     "San Nicolás": "roja crecida",
     "Cobquecura": "roja",
-    "Coelemu": "roja",
+    "Coelemu": "roja crecida",
     "Ninhue": "roja crecida",
     "Portezuelo": "roja crecida",
     "Quirihue": "roja",
-    "Ránquil": "roja",
+    "Ránquil": "roja crecida",
     "Trehuaco": "roja crecida"
   },
   "cauces": [
@@ -450,9 +450,9 @@ const DATOS_POR_DEFECTO = {
       "rio": "Río Itata",
       "est": "Puente Coelemu",
       "flow": "3.930",
-      "um": "amarillo",
+      "um": "rojo",
       "tr": "up",
-      "note": "subió a AMARILLO y sigue en alza · onda de crecida aguas abajo"
+      "note": "SUPERÓ UMBRAL ROJO (ATR 68-A, 13:20) · Roja en 9 comunas · en alza"
     },
     {
       "rio": "Río Itata",
@@ -460,7 +460,7 @@ const DATOS_POR_DEFECTO = {
       "flow": "1.580",
       "um": "amarillo",
       "tr": "up",
-      "note": "subió a AMARILLO y sigue en alza · vigilancia ribereña"
+      "note": "umbral amarillo · en alza · aguas arriba del tramo en rojo"
     },
     {
       "rio": "Estero Coyanco",
@@ -632,23 +632,23 @@ const DATOS_POR_DEFECTO = {
   "special": [
     {
       "tipo": "flood",
-      "loc": "Ñiquén · nuevo foco de daño habitacional",
-      "d": "Salto nocturno: <b>80 damnificadas, 81 viviendas con daño menor y 90 en evaluación</b> (antes: 56 damnificadas / 51 viviendas). Concentra un tercio del daño habitacional regional; priorizar catastro FIBE y apoyo municipal."
-    },
-    {
-      "tipo": "flood",
-      "loc": "Onda de crecida del Itata bajo · SUBIENDO",
-      "d": "<b>Puente Coelemu (3.930 m³/s) y Balsa Nueva Aldea (1.580) pasaron a umbral amarillo y siguen en alza</b> (DGA 09:00) mientras el resto de la cuenca alta ya recibe menos lluvia. Vigilancia de sectores ribereños en <b>Coelemu, Ránquil y Trehuaco</b> durante las próximas horas. Con 15–20 mm adicionales pronosticados para hoy sobre cuenca saturada, la vigilancia se extiende al menos hasta mañana."
-    },
-    {
-      "tipo": "flood",
       "loc": "Ninhue · aislamiento sube a 91 personas",
       "d": "La Quinta 54 · Coipín (callejón Los Suspiros) 16 · <b>El Rincón 16 y Dubái Hualte 5 (sectores nuevos)</b>. En Ránquil se suman 9 aisladas en Navas por socavón de camino vecinal. Total regional: <b>283 aisladas</b>."
     },
     {
       "tipo": "flood",
-      "loc": "Quillón · desescalada a Alerta Amarilla (Informe Diario 11:05)",
-      "d": "El Coyanco descendió del umbral rojo tras el peak de anoche y SENAPRED <b>desescaló la alerta de Quillón a Amarilla</b> por crecida. Mantener monitoreo de La Esmeralda y Alto Culturía: persisten <b>35 aisladas y el puente colapsado</b> sobre el estero."
+      "loc": "⚠ Río Itata en ROJO · ATR N°68-A (13:20) · evacuaciones preventivas en evaluación",
+      "d": "<b>Puente Coelemu sobrepasó el umbral rojo</b> y la estación sigue en alza; Balsa Nueva Aldea en amarillo ascendente. Roja por crecida en las <b>9 comunas ribereñas</b>. Cursos de acción SENAPRED: difusión, monitoreo de sectores con desbordes históricos, alistamiento de recursos y <b>evaluación de evacuaciones preventivas</b>. Prioridad: riberas de Coelemu (95 aisladas, 100 viviendas en evaluación), Ñipas/Ránquil (albergue activo a metros del río) y Trehuaco (doble Roja: Itata + Lonquén)."
+    },
+    {
+      "tipo": "flood",
+      "loc": "Ñiquén · nuevo foco de daño habitacional",
+      "d": "Salto nocturno: <b>80 damnificadas, 81 viviendas con daño menor y 90 en evaluación</b> (antes: 56 damnificadas / 51 viviendas). Concentra un tercio del daño habitacional regional; priorizar catastro FIBE y apoyo municipal."
+    },
+    {
+      "tipo": "flood",
+      "loc": "Quillón · nuevamente bajo Alerta Roja (ahora por el Itata)",
+      "d": "La desescalada del Coyanco duró horas: a las 13:20 la comuna quedó incluida en la <b>Roja por crecida del río Itata</b> (ATR 68-A). Coyanco se mantiene en amarillo. Persisten 35 aisladas y el puente de Alto Culturía colapsado."
     },
     {
       "tipo": "flood",
@@ -794,12 +794,12 @@ const DATOS_POR_DEFECTO = {
   "fuentes": [
     {
       "n": "SENAPRED",
-      "t": "02-08 11:05 · Informe Diario AM + 146-D",
+      "t": "02-08 13:20 · ATR 68-A (Roja Itata)",
       "st": "ok"
     },
     {
       "n": "DGA (cauces)",
-      "t": "02-08 09:00 · confirmado 11:05",
+      "t": "02-08 13:20 · Itata Pte. Coelemu en ROJO",
       "st": "ok"
     },
     {
