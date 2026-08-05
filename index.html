@@ -357,85 +357,85 @@
    ============================================================ */
 const DATOS_POR_DEFECTO = {
   "meta": {
-    "reporte": "Informe Diario de Monitoreo Regional (PM) · base Informe N°146-E",
-    "envio": "02-08-2026 · 19:23 · Informe Diario PM (corte 19:02) — crecidas Itata/Lonquén/Coyanco re-escaladas a Roja",
-    "base": "Roja Regional meteorológica vigente · crecidas río Itata (9 comunas), río Lonquén (4) y estero Coyanco (Quillón) en ALERTA ROJA y río Chillán en Amarilla (Informe Diario PM 19:02) · afectación a personas s/ Informe 146-E (15:00) · pluviometría 18:31 · vial 18:38",
-    "estado": "ALERTA ROJA REGIONAL · SISTEMA FRONTAL",
+    "reporte": "ATR N°65-A · Informe N°146-I",
+    "envio": "04-08-2026 · 19:25 · Alerta meteorológica regional desescalada a AMARILLA (ATR N°65-A); crecidas Itata/Lonquén/Coyanco siguen en ROJA — Informe Diario PM (corte 19:16) e Informe N°146-I (18:28)",
+    "base": "Alerta meteorológica regional bajó a AMARILLA (ATR N°65-A, 03-08 20:56, cancela Roja) · crecidas río Itata (9 comunas), río Lonquén (4) y estero Coyanco (Quillón) siguen en ALERTA ROJA y río Chillán en Amarilla (Informe Diario PM 19:16) · afectación a personas s/ Informe N°146-I (corte 16:55) · estaciones DGA bajo umbral azul (16:23) · energía 191 clientes (0,1%) · pluviometría 18:00 · vial 16:38",
+    "estado": "ALERTA ROJA POR CRECIDAS · METEOROLÓGICA AMARILLA",
     "tono": "red",
-    "srcNote": "Fuente principal: <b>Informe Diario de Monitoreo Regional SENAPRED Ñuble (PM, 02-08 19:02)</b> — resumen de alertas vigentes, vialidad MOP (18:38), pluviometría DMC (18:31) y pronóstico DMC (18:21). Afectación a personas, albergues y energía s/ <b>Informe de Emergencia N°146-E</b> (16:00; personas 15:00, albergues 06:50). Cauces: última consulta de estaciones DGA 13:00 (146-E). Volcán: SERNAGEOMIN (RAV 21-jul).",
-    "tickMap": "Roja Regional meteorológica vigente en las 21 comunas · ≋ = Alerta Roja por crecida en 11 comunas (ríos Itata y Lonquén y estero Coyanco): Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás · ≈ = Amarilla por crecida del río Chillán en Pinto, Coihueco, Chillán y Chillán Viejo (Informe Diario PM 19:02)",
-    "tickCauce": "El Informe Diario PM (19:02) mantiene en <b>Alerta Roja por crecida</b> los ríos Itata y Lonquén y el estero Coyanco (Quillón), y en Amarilla el río Chillán. Última lectura de estaciones DGA disponible: 02-ago 13:00 (146-E) — Itata Pte. Coelemu (rojo, subiendo) y Lonquén Trehuaco (rojo, bajando). El resumen DGA no publica caudales (m³/s): s/d",
-    "tickAfect": "Informe N°146-E · consulta 02-ago 15:00 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
+    "srcNote": "Fuente principal: <b>Informe Diario de Monitoreo Regional SENAPRED Ñuble (PM, 04-08 19:16)</b> — resumen de alertas vigentes, cauces DGA (16:23), vialidad (16:38), pluviometría DMC (18:00) y pronóstico/avisos DMC. Afectación a personas, viviendas, albergues, energía, sanitarios y vialidad de detalle s/ <b>Informe de Emergencia N°146-I</b> (corte 18:28; personas 16:55, albergues 13:40, vialidad 16:38, educación 15:30, cauces 16:23). Desescalamiento meteorológico: <b>ATR N°65-A</b> (03-08 20:56). Volcán: SERNAGEOMIN (RAV 21-jul).",
+    "tickMap": "Alerta <b>Amarilla meteorológica regional</b> vigente en las 21 comunas (desescalada desde Roja por ATR N°65-A) · ≋ = Alerta Roja por crecida en 11 comunas (ríos Itata y Lonquén y estero Coyanco): Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu, Trehuaco, Ninhue y San Nicolás · ≈ = Amarilla por crecida del río Chillán en Pinto, Coihueco, Chillán y Chillán Viejo (Informe Diario PM 19:16)",
+    "tickCauce": "La DGA reporta (consulta 04-ago 16:23, Informe 146-I) que <b>todas las estaciones de la red de alerta están por debajo del umbral de alerta azul, sin riesgo de desbordes</b>. No obstante, SENAPRED mantiene administrativamente en <b>Alerta Roja por crecida</b> los ríos Itata y Lonquén y el estero Coyanco (Quillón) y en Amarilla el río Chillán (Informe Diario PM 19:16). El resumen DGA no publica caudales (m³/s): s/d",
+    "tickAfect": "Informe N°146-I · consulta 04-ago 16:55 · comunas con evacuadas, damnificadas, aisladas o viviendas dañadas",
     "tickSrc": "Última consulta por plataforma · verde = dato del día · amarillo = dato anterior o por confirmar",
-    "afectNote": "Total regional: <b>1.205 afectadas</b>, <b>281 damnificadas</b> (Ñiquén 80 · San Ignacio 40 · San Nicolás 26 · Bulnes 26 · Pemuco 25 · Coelemu 22 · Quillón 18 · Chillán 18 · Portezuelo 17), <b>42 albergadas</b> en <b>8 albergues</b>, <b>388 aisladas</b> (+105 vs. 146-D), <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>240 en evaluación</b> · <b>198 con daño</b> (164 menor / 28 mayor / <b>6 destruidas</b>). Fuente: Municipalidades (corte 15:00, Informe 146-E).",
-    "footNote": "Panel informativo de emergencia — Gobierno Regional de Ñuble · Versión para difusión. Alerta Roja regional vigente; cifras oficiales en evolución (SENAPRED, DGA, DMC, SEC, MOP, MMA)."
+    "afectNote": "Total regional: <b>2.972 afectadas</b>, <b>730 damnificadas</b> (Ñiquén 120 · Pemuco 103 · San Ignacio 71 · Cobquecura 55 · Portezuelo 49 · Quillón 41 · Bulnes 40 · Ránquil 39 · San Nicolás 39 · Coihueco 38 · Chillán 34), <b>27 albergadas</b> en <b>9 albergues</b>, <b>331 aisladas</b>, <b>80 evacuadas</b> (Coelemu 50 · Ránquil 30), <b>0 lesionadas / 0 fallecidas</b>. Viviendas: <b>228 personas en evaluación</b> · <b>529 con daño</b> (450 menor / 70 mayor / <b>9 destruidas</b>). Fuente: Municipalidades (corte 16:55, Informe N°146-I).",
+    "footNote": "Panel informativo de emergencia — Gobierno Regional de Ñuble · Versión para difusión. Alerta Roja por crecidas vigente y Amarilla meteorológica regional; cifras oficiales en evolución (SENAPRED, DGA, DMC, SEC, MOP, MMA)."
   },
   "banner": {
-    "tono": "red",
-    "etop": "Informe Diario de Monitoreo Regional (PM) · SENAPRED Ñuble · 02-08 · 19:02",
-    "titulo": "El Informe Diario vespertino re-escala a Alerta Roja las crecidas de los ríos Itata y Lonquén y del estero Coyanco; el río Chillán queda en Amarilla",
-    "texto": "El <b>Informe Diario de Monitoreo Regional (PM, 19:02)</b> consolida las alertas vigentes: sigue la <b>Alerta Roja meteorológica regional</b> y las crecidas figuran nuevamente en <b>Alerta Roja</b> — <b>río Itata</b> (Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco), <b>río Lonquén</b> (Ninhue, Portezuelo, San Nicolás y Trehuaco) y <b>estero Coyanco</b> (Quillón); el <b>río Chillán</b> se mantiene en <b>Alerta Amarilla</b> (Pinto, Coihueco, Chillán y Chillán Viejo). La afectación a personas se mantiene según el Informe 146-E (corte 15:00): <b>388 aisladas, 281 damnificadas y 42 albergadas</b> en 8 albergues. En pluviometría, Chillán acumula <b>38,8 mm/24 h</b> (déficit anual −17,7%). Rige un nuevo <b>aviso DMC de tormentas eléctricas, granizos y fuertes rachas de viento</b> (A373-5, 17:33). La <b>Ruta N-42 sigue cortada</b> (km 13,5, desprendimiento) y el aeródromo de Chillán está <b>cerrado desde las 18:31</b>."
+    "tono": "amber",
+    "etop": "Informe Diario de Monitoreo Regional (PM) · SENAPRED Ñuble · 04-08 · 19:16",
+    "titulo": "La alerta meteorológica regional baja de Roja a Amarilla (ATR N°65-A); las crecidas de los ríos Itata y Lonquén y del estero Coyanco se mantienen en Alerta Roja",
+    "texto": "El <b>ATR N°65-A</b> (03-08, 20:56) <b>canceló la Alerta Roja meteorológica regional y declaró Alerta Amarilla</b>. El <b>Informe Diario PM (04-08, 19:16)</b> mantiene, en cambio, las crecidas en <b>Alerta Roja</b> — <b>río Itata</b> (Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco), <b>río Lonquén</b> (Ninhue, Portezuelo, San Nicolás y Trehuaco) y <b>estero Coyanco</b> (Quillón); el <b>río Chillán</b> sigue en <b>Amarilla</b> (Pinto, Coihueco, Chillán y Chillán Viejo). La <b>DGA reporta todas sus estaciones bajo el umbral azul, sin riesgo de desborde</b> (16:23) y la lluvia amainó (<b>1,6 mm/24 h</b> en Chillán). La energía está casi normalizada: <b>191 clientes sin suministro (0,1%)</b>, desde 11.417. La afectación acumulada (Informe N°146-I, 16:55) suma <b>730 damnificadas, 331 aisladas, 27 albergadas</b> en 9 albergues y <b>529 viviendas con daño</b> (9 destruidas). Alerta: la <b>DMC anuncia un nuevo sistema frontal</b> para el <b>miércoles 5</b> con precipitaciones moderadas a fuertes y viento moderado a fuerte."
   },
   "kpis": [
     {
-      "a": "var(--rojo)",
-      "label": "Alerta regional vigente",
-      "val": "Roja",
+      "a": "var(--amarilla)",
+      "label": "Alerta meteorológica regional",
+      "val": "Amarilla",
       "vsmall": false,
-      "foot": "Meteorológica regional Roja + crecidas Itata/Lonquén/Coyanco en Roja (11 comunas) · Informe Diario PM 19:02"
+      "foot": "desescalada desde Roja por ATR N°65-A (03-08 20:56); crecidas Itata/Lonquén/Coyanco siguen en Roja · Informe Diario PM 19:16"
     },
     {
       "a": "var(--rojo)",
       "label": "Crecidas en alerta",
       "val": "3 Rojas",
-      "foot": "ríos Itata y Lonquén y estero Coyanco en Alerta Roja · río Chillán en Amarilla · Informe Diario PM 19:02"
+      "foot": "ríos Itata y Lonquén y estero Coyanco en Alerta Roja · río Chillán en Amarilla · Informe Diario PM 19:16"
     },
     {
       "a": "var(--danger)",
       "label": "Damnificadas / aisladas",
-      "val": "281 / 388",
-      "foot": "aisladas +105 · Coelemu 95 · Ninhue 91 · San Fabián 89 · 146-E"
+      "val": "730 / 331",
+      "foot": "damnificadas +449 vs. 146-E · aisladas: Coelemu 95 · Ninhue 91 · San Fabián 32 · Quillón 35 · 146-I 16:55"
     },
     {
-      "a": "var(--danger)",
+      "a": "var(--verde)",
       "label": "Sin electricidad",
-      "val": "11.417",
-      "foot": "4,2% regional · baja desde 12.946 · 146-E 16:00 · apps.sec.cl"
+      "val": "191",
+      "foot": "0,1% regional · fuerte baja desde 11.417 (4,2%) · 146-I · SEC"
     },
     {
-      "a": "var(--amarilla)",
+      "a": "var(--verde)",
       "label": "Red vial troncal",
-      "val": "N-42",
+      "val": "Sin cortes",
       "vsmall": true,
-      "foot": "único corte troncal (km 13,5) · N-55 cadenas oblig. km 69 · vial MOP 18:38"
+      "foot": "N-42 rehabilitada · N-55 cadenas oblig. km 69 · N-605 solo livianos · vial MOP 16:38"
     },
     {
       "a": "var(--b-azul)",
       "label": "Agua caída 24 h",
-      "val": "38,8 mm",
-      "foot": "Chillán · total anual 528,7 mm · déficit −17,7% · DMC 18:31"
+      "val": "1,6 mm",
+      "foot": "Chillán · total anual 546,7 mm · déficit −15,9% · DMC 18:00"
     }
   ],
   "alertMap": {
     "Bulnes": "roja crecida",
     "Chillán": "roja crecida",
-    "Chillán Viejo": "roja crecidaam",
-    "El Carmen": "roja",
+    "Chillán Viejo": "amarilla crecidaam",
+    "El Carmen": "amarilla",
     "Pemuco": "roja crecida",
-    "Pinto": "roja crecidaam",
+    "Pinto": "amarilla crecidaam",
     "Quillón": "roja crecida",
-    "San Ignacio": "roja",
+    "San Ignacio": "amarilla",
     "Yungay": "roja crecida",
-    "Coihueco": "roja crecidaam",
-    "Ñiquén": "roja",
-    "San Carlos": "roja",
-    "San Fabián": "roja",
+    "Coihueco": "amarilla crecidaam",
+    "Ñiquén": "amarilla",
+    "San Carlos": "amarilla",
+    "San Fabián": "amarilla",
     "San Nicolás": "roja crecida",
-    "Cobquecura": "roja",
+    "Cobquecura": "amarilla",
     "Coelemu": "roja crecida",
     "Ninhue": "roja crecida",
     "Portezuelo": "roja crecida",
-    "Quirihue": "roja",
+    "Quirihue": "amarilla",
     "Ránquil": "roja crecida",
     "Trehuaco": "roja crecida"
   },
@@ -444,260 +444,243 @@ const DATOS_POR_DEFECTO = {
       "rio": "Río Itata",
       "est": "Puente Coelemu",
       "flow": "s/d",
-      "um": "rojo",
-      "tr": "up",
-      "note": "Última lectura DGA 13:00 (146-E): sobre umbral rojo y SUBIENDO. El Informe Diario PM 19:02 mantiene la crecida del río Itata en Alerta Roja — vigilancia prioritaria. Caudal no publicado en el resumen."
+      "um": "normal",
+      "tr": "down",
+      "note": "DGA 04-ago 16:23 (146-I): por debajo del umbral de alerta azul, sin riesgo de desborde. SENAPRED mantiene administrativamente la crecida del río Itata en <b>Alerta Roja</b> (Informe Diario PM 19:16) — vigilancia ribereña en Coelemu, Ránquil y Trehuaco. Caudal no publicado."
     },
     {
       "rio": "Río Lonquén",
       "est": "Trehuaco",
       "flow": "s/d",
-      "um": "rojo",
+      "um": "normal",
       "tr": "down",
-      "note": "Última lectura DGA 13:00 (146-E): sobre umbral rojo, bajando niveles. El Informe Diario PM 19:02 mantiene la crecida del río Lonquén en Alerta Roja. Caudal no publicado en el resumen."
-    },
-    {
-      "rio": "Río Itata",
-      "est": "Balsa Nueva Aldea",
-      "flow": "s/d",
-      "um": "amarillo",
-      "tr": "down",
-      "note": "DGA 13:00 (146-E): umbral amarillo, nivel estable."
+      "note": "DGA 04-ago 16:23 (146-I): bajo umbral de alerta azul, sin riesgo de desborde. SENAPRED mantiene la crecida del río Lonquén en <b>Alerta Roja</b> (Ninhue, Portezuelo, San Nicolás y Trehuaco). Caudal no publicado."
     },
     {
       "rio": "Estero Coyanco",
       "est": "Puente Coyanco",
       "flow": "s/d",
-      "um": "rojo",
-      "tr": "up",
-      "note": "Lectura DGA 13:00 (146-E) lo situó en Azul; el Informe Diario PM 19:02 mantiene la crecida del estero Coyanco en Alerta Roja para Quillón (puente Coyanco colapsado). Caudal no publicado."
-    },
-    {
-      "rio": "Río Itata",
-      "est": "Paso Hondo",
-      "flow": "s/d",
-      "um": "azul",
+      "um": "normal",
       "tr": "down",
-      "note": "DGA 13:00 (146-E): alerta azul."
-    },
-    {
-      "rio": "Río Itata",
-      "est": "General Cruz",
-      "flow": "s/d",
-      "um": "azul",
-      "tr": "down",
-      "note": "DGA 13:00 (146-E): alerta azul."
-    },
-    {
-      "rio": "Río Ñuble",
-      "est": "Confluencia",
-      "flow": "s/d",
-      "um": "azul",
-      "tr": "down",
-      "note": "DGA 13:00 (146-E): alerta azul."
+      "note": "DGA 04-ago 16:23 (146-I): bajo umbral azul. SENAPRED mantiene la crecida del estero Coyanco en <b>Alerta Roja</b> para Quillón (puente Coyanco/Alto Culturía dañado). Caudal no publicado."
     },
     {
       "rio": "Río Chillán",
       "est": "Esperanza",
       "flow": "s/d",
-      "um": "azul",
+      "um": "normal",
       "tr": "down",
-      "note": "DGA 13:00 (146-E): alerta azul (también azul en camino a Confluencia)."
+      "note": "DGA 04-ago 16:23 (146-I): bajo umbral azul. SENAPRED mantiene el río Chillán en <b>Alerta Amarilla</b> (Pinto, Coihueco, Chillán y Chillán Viejo)."
     },
     {
-      "rio": "Río Larqui",
-      "est": "Santa Cruz de Cuca",
+      "rio": "Río Ñuble",
+      "est": "Confluencia",
       "flow": "s/d",
-      "um": "azul",
+      "um": "normal",
       "tr": "down",
-      "note": "DGA 13:00 (146-E): alerta azul."
+      "note": "DGA 04-ago 16:23 (146-I): bajo umbral de alerta azul, sin riesgo de desborde. Socavón de 170 m en ribera norte (San Carlos) reportado por crecida previa."
+    },
+    {
+      "rio": "Río Itata",
+      "est": "Balsa Nueva Aldea",
+      "flow": "s/d",
+      "um": "normal",
+      "tr": "down",
+      "note": "DGA 04-ago 16:23 (146-I): bajo umbral de alerta azul, sin riesgo de desborde."
     }
   ],
   "volcano": {
     "estado": "Alerta Técnica Amarilla",
     "comunas": "Comunas de Pinto y Coihueco",
-    "detalle": "SERNAGEOMIN (OVDAS) mantiene el Complejo Volcánico Nevados de Chillán en Alerta Técnica Amarilla (RAV del 21-jul, período 1–15 jul; sin REAV vigentes) y sostiene posibilidad ALTA de aluviones y derrumbes en toda la región mientras persista el sistema frontal. Acceso restringido al perímetro de 1.000 m del cráter Nicanor."
+    "detalle": "SERNAGEOMIN (OVDAS) mantiene el Complejo Volcánico Nevados de Chillán en Alerta Técnica Amarilla (RAV del 21-jul, período 1–15 jul; sin REAV vigentes). SENAPRED conserva la <b>Alerta Temprana Preventiva</b> para Pinto y Coihueco. Con el nuevo sistema frontal previsto para el miércoles 5, persiste el riesgo de remociones en masa y aluviones en la precordillera. Acceso restringido al perímetro de 1.000 m del cráter activo."
   },
   "comunas": [
     {
-      "c": "Coelemu",
-      "ev": 50,
-      "dam": 22,
-      "ai": 95,
-      "vd": 19
-    },
-    {
       "c": "Ñiquén",
       "ev": 0,
-      "dam": 80,
+      "dam": 120,
       "ai": 0,
-      "vd": 85
-    },
-    {
-      "c": "Ninhue",
-      "ev": 0,
-      "dam": 2,
-      "ai": 91,
-      "vd": 4
-    },
-    {
-      "c": "San Ignacio",
-      "ev": 0,
-      "dam": 40,
-      "ai": 0,
-      "vd": 17
+      "vd": 146
     },
     {
       "c": "Pemuco",
       "ev": 0,
-      "dam": 25,
+      "dam": 103,
       "ai": 0,
-      "vd": 12
+      "vd": 60
     },
     {
-      "c": "Quillón",
+      "c": "San Ignacio",
       "ev": 0,
-      "dam": 18,
-      "ai": 35,
-      "vd": 7
-    },
-    {
-      "c": "San Nicolás",
-      "ev": 0,
-      "dam": 26,
-      "ai": 14,
-      "vd": 11
-    },
-    {
-      "c": "Chillán",
-      "ev": 0,
-      "dam": 18,
+      "dam": 71,
       "ai": 0,
-      "vd": 6
-    },
-    {
-      "c": "Bulnes",
-      "ev": 0,
-      "dam": 26,
-      "ai": 27,
-      "vd": 9
-    },
-    {
-      "c": "Ránquil",
-      "ev": 30,
-      "dam": 0,
-      "ai": 25,
-      "vd": 0
-    },
-    {
-      "c": "Coihueco",
-      "ev": 0,
-      "dam": 0,
-      "ai": 0,
-      "vd": 15
+      "vd": 30
     },
     {
       "c": "Cobquecura",
       "ev": 0,
-      "dam": 0,
+      "dam": 55,
       "ai": 12,
-      "vd": 0
-    },
-    {
-      "c": "Yungay",
-      "ev": 0,
-      "dam": 7,
-      "ai": 0,
-      "vd": 3
+      "vd": 24
     },
     {
       "c": "Portezuelo",
       "ev": 0,
-      "dam": 17,
+      "dam": 49,
       "ai": 0,
-      "vd": 10
+      "vd": 27
+    },
+    {
+      "c": "Quillón",
+      "ev": 0,
+      "dam": 41,
+      "ai": 35,
+      "vd": 15
+    },
+    {
+      "c": "Bulnes",
+      "ev": 0,
+      "dam": 40,
+      "ai": 27,
+      "vd": 15
+    },
+    {
+      "c": "Ránquil",
+      "ev": 30,
+      "dam": 39,
+      "ai": 25,
+      "vd": 26
+    },
+    {
+      "c": "San Nicolás",
+      "ev": 0,
+      "dam": 39,
+      "ai": 14,
+      "vd": 17
+    },
+    {
+      "c": "Coihueco",
+      "ev": 0,
+      "dam": 38,
+      "ai": 0,
+      "vd": 21
+    },
+    {
+      "c": "Chillán",
+      "ev": 0,
+      "dam": 34,
+      "ai": 0,
+      "vd": 14
+    },
+    {
+      "c": "Coelemu",
+      "ev": 50,
+      "dam": 23,
+      "ai": 95,
+      "vd": 19
     },
     {
       "c": "San Fabián",
       "ev": 0,
+      "dam": 17,
+      "ai": 32,
+      "vd": 22
+    },
+    {
+      "c": "El Carmen",
+      "ev": 0,
+      "dam": 17,
+      "ai": 0,
+      "vd": 6
+    },
+    {
+      "c": "Ninhue",
+      "ev": 0,
+      "dam": 8,
+      "ai": 91,
+      "vd": 14
+    },
+    {
+      "c": "Pinto",
+      "ev": 0,
       "dam": 0,
-      "ai": 89,
-      "vd": 0
+      "ai": 0,
+      "vd": 36
     }
   ],
   "comunaTotal": {
     "ev": "80",
-    "dam": "281",
-    "ai": "388",
-    "vd": "198"
+    "dam": "730",
+    "ai": "331",
+    "vd": "529"
   },
   "special": [
     {
       "tipo": "flood",
-      "loc": "Aislamiento regional sube a 388 personas (+105)",
-      "d": "Nuevos y ampliados focos por crecida y socavones: <b>Coelemu 95 · Ninhue 91 (La Quinta 54, El Rincón 16, Coipín 16, Dubái Hualte 5) · San Fabián 89 (foco nuevo) · Quillón 35 · Bulnes 27 (Los Pinos) · Ránquil 25 (Navas)</b>. Total regional: <b>388 aisladas</b> según Informe 146-E (corte 15:00)."
+      "loc": "Alerta meteorológica regional desescalada de Roja a Amarilla (ATR N°65-A)",
+      "d": "El <b>ATR N°65-A</b> (03-08, 20:56) <b>canceló la Alerta Roja meteorológica regional y declaró Alerta Amarilla</b>. Se sostiene por la lluvia acumulada sobre suelos saturados y la vigilancia de cauces, pero refleja la mejora de las condiciones: la lluvia amainó (1,6 mm/24 h en Chillán) y la DGA reporta todas sus estaciones bajo el umbral azul (16:23)."
     },
     {
       "tipo": "flood",
-      "loc": "Crecidas de Itata, Lonquén y estero Coyanco re-escaladas a Alerta Roja (Informe Diario PM 19:02)",
-      "d": "El Informe Diario vespertino (19:02) consolida las crecidas nuevamente en <b>Alerta Roja</b>: <b>río Itata</b> en 9 comunas (Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco), <b>río Lonquén</b> en 4 (Ninhue, Portezuelo, San Nicolás y Trehuaco) y <b>estero Coyanco</b> en Quillón. El <b>río Chillán</b> queda en Amarilla (Pinto, Coihueco, Chillán y Chillán Viejo). Condición: <b>monitoreo reforzado, no repliegue</b> — observación ribereña en Coelemu, Ñipas/Ránquil, Trehuaco y Ninhue. Última lectura de estaciones DGA disponible: 13:00 (146-E)."
+      "loc": "Las crecidas de Itata, Lonquén y estero Coyanco se mantienen en Alerta Roja (Informe Diario PM 19:16)",
+      "d": "Pese al descenso de niveles medido por la DGA, SENAPRED conserva en <b>Alerta Roja por crecida</b>: <b>río Itata</b> en 9 comunas (Yungay, Pemuco, Bulnes, Quillón, Chillán, Ránquil, Portezuelo, Coelemu y Trehuaco), <b>río Lonquén</b> en 4 (Ninhue, Portezuelo, San Nicolás y Trehuaco) y <b>estero Coyanco</b> en Quillón. El <b>río Chillán</b> sigue en Amarilla (Pinto, Coihueco, Chillán y Chillán Viejo). Condición: <b>monitoreo reforzado</b> en riberas de Coelemu, Ñipas/Ránquil, Trehuaco y Ninhue."
     },
     {
       "tipo": "flood",
-      "loc": "Ñiquén · principal foco de daño habitacional",
-      "d": "<b>80 damnificadas, 85 viviendas con daño (85 menor) y 90 en evaluación</b>. Concentra el mayor daño habitacional de la región; priorizar catastro FIBE y apoyo municipal."
+      "loc": "Nuevo sistema frontal previsto para el miércoles 5 (DMC)",
+      "d": "La DMC emitió <b>Alerta de precipitaciones moderadas a fuertes en corto periodo</b> (tarde-noche del miércoles 5, litoral, cordillera de la costa, valle y precordillera) y <b>Alerta de viento moderado a fuerte</b>, más avisos de nevadas en cordillera. Sobre suelos saturados y cauces bajo vigilancia, mantiene <b>ALTA</b> la posibilidad de remociones en masa y aluviones."
     },
     {
       "tipo": "flood",
-      "loc": "Quillón · sube a 18 damnificadas · persiste aislamiento",
-      "d": "Trayectoria del día: Roja por Coyanco (anoche) → Roja por Itata (13:20) → Amarilla (media tarde) → <b>nuevamente Roja</b> por crecida del Itata y del estero Coyanco (Informe Diario PM 19:02). Persisten <b>35 aisladas</b> (La Esmeralda, Alto Culturía) y el puente colapsado sobre el estero Coyanco. 18 damnificadas y 7 viviendas con daño (146-E)."
+      "loc": "Ñiquén y Pemuco · principales focos de daño habitacional",
+      "d": "<b>Ñiquén: 120 damnificadas y 146 viviendas con daño (146 menor).</b> <b>Pemuco: 103 damnificadas y 60 viviendas (44 menor / 15 mayor / 1 destruida).</b> Concentran el mayor daño habitacional de la región (Informe 146-I). Total regional: <b>529 viviendas con daño, 9 destruidas</b>. Priorizar catastro FIBE y apoyo municipal."
     },
     {
       "tipo": "flood",
-      "loc": "Energía · 11.417 clientes sin suministro (4,2%)",
-      "d": "Continúa la mejora: <b>11.417 clientes afectados (4,2% regional)</b> al corte del 146-E (16:00), baja desde 12.946 (146-D) y desde el peak nocturno (~18.750). El 146-E entrega solo el total regional; el desglose por comuna (precordillera de Diguillín en el 146-D) debe verificarse en apps.sec.cl. Atención a electrodependientes."
+      "loc": "Aislamiento regional: 331 personas",
+      "d": "Focos por crecida y socavones: <b>Coelemu 95 · Ninhue 91 (La Quinta 54, El Rincón 16, Coipín 16, Dubái Hualte 5) · Quillón 35 (La Esmeralda, Alto Culturía) · San Fabián 32 (Maitenal) · Bulnes 27 (Los Pinos) · Ránquil 25 (Navas) · San Nicolás 14 · Cobquecura 12</b>. Total regional: <b>331 aisladas</b> según Informe N°146-I (corte 16:55)."
     },
     {
       "tipo": "flood",
-      "loc": "Solicitud del 2% constitucional de emergencia · GORE",
-      "d": "Solicitud del Gobernador al Presidente (01-08) para reparar infraestructura, apoyar familias y recuperar sistemas productivos; parlamentarios piden además <b>emergencia agrícola</b>. El 146-E refuerza el caso: <b>198 viviendas con daño</b>, socavón de 170 m en ribera del Ñuble (San Carlos), puentes colapsados (El Huemul, Estero Navidad, Alto Culturía) y red vial rural con decenas de puntos de corte."
+      "loc": "Energía casi normalizada · 191 clientes sin suministro (0,1%)",
+      "d": "Fuerte mejora: <b>191 clientes afectados (0,1% regional)</b> al corte del Informe N°146-I, en baja desde 11.417 (4,2%). Combustibles y servicios sanitarios concesionados sin afectación. Persisten rebalses de fosas sépticas en <b>San Fabián (126 arranques / 514 personas)</b> y <b>Chillán Viejo (50 / 140)</b>, y SSR afectados en Coelemu (Pangue-Meipo 81 y Ranguelmo 374 arranques)."
     }
   ],
   "tiles": [
     {
-      "c": "var(--b-rojo)",
+      "c": "var(--b-verde)",
       "ic": "bolt",
       "t": "Energía eléctrica",
-      "big": "11.417",
-      "d": "clientes sin suministro (<b>4,2%</b> regional) al corte del 146-E (16:00), en baja desde 12.946 (146-D) y el peak nocturno (~18.750). El 146-E entrega solo el total regional; el desglose por comuna (foco en precordillera de Diguillín: Yungay, El Carmen, Pemuco) debe verificarse en apps.sec.cl. — SEC."
+      "big": "191",
+      "d": "clientes sin suministro (<b>0,1%</b> regional) al corte del Informe N°146-I, en fuerte baja desde 11.417 (4,2%). Suministro prácticamente normalizado; combustibles sin afectación. El desglose por comuna venía en imagen embebida — verificar en apps.sec.cl. — SEC."
     },
     {
-      "c": "var(--b-naranja)",
+      "c": "var(--b-verde)",
       "ic": "road",
       "t": "Conectividad vial",
-      "big": "N-42 cortada (km 13,5)",
-      "d": "El Informe Diario PM (vial MOP 18:38) mantiene <b>interrumpida solo la Ruta N-42</b> (Cobquecura–Borde costero, km 13,5, por desprendimiento de tierra); la N-14-O (Coelemu–Dichato) figura operativa/habilitada. <b>N-55</b> (Chillán–Pinto): porte obligatorio de cadenas desde el km 69. El resto de la red troncal monitoreada está operativa. Persisten cortes en vías vecinales y <b>puentes colapsados</b> (El Huemul, Estero Navidad, Alto Culturía). — Vialidad MOP/Carabineros."
+      "big": "Sin cortes troncales",
+      "d": "El Informe Diario PM (vial MOP 16:38) reporta <b>la red troncal operativa</b>, incluida la <b>N-42 rehabilitada</b>. Restricciones: <b>N-55</b> (Chillán–Pinto) porte obligatorio de cadenas desde el km 69; <b>N-605</b> solo vehículos livianos. Persisten cortes en vías vecinales y <b>puentes colapsados/dañados</b> (El Carmen: El Huemul, Estero Navidad; Quillón: Alto Culturía, El Olivar; puentes El Valiente y San Jorge en San Fabián/San Carlos). Aeródromo de Chillán cerrado desde 18:33. — Vialidad MOP/Carabineros."
     },
     {
       "c": "var(--b-morado)",
       "ic": "drop",
       "t": "Servicios sanitarios",
       "big": "654 personas",
-      "d": "Rebalse de fosas sépticas en <b>San Fabián (126 arranques / 514 personas)</b> y <b>Chillán Viejo (50 / 140)</b>, sin cambios. SSR y concesionarias sin afectación. — Municipalidades/DOH/SISS."
+      "d": "Rebalse de fosas sépticas en <b>San Fabián (126 arranques / 514 personas)</b> y <b>Chillán Viejo (50 / 140)</b>. SSR afectados en <b>Coelemu</b>: Pangue-Meipo (81 arranques) y Ranguelmo (374 arranques) por embancamiento y desborde de canal. Sanitarias concesionadas sin afectación. — Municipalidades/DOH/SISS."
     },
     {
       "c": "var(--b-azul)",
       "ic": "school",
       "t": "Educación",
-      "big": "22 establecimientos",
-      "d": "Daños en 7 comunas: San Carlos 5 · Coihueco 4 (Liceo Bicentenario Claudio Arrau con afectación extensa y riesgo eléctrico) · Pinto 4 (Esc. Juan Jorge sin acceso) · Ránquil 4 · Ñiquén 3 · Yungay 1 suspendido · San Fabián 1. — SEREMI Educación 31-jul."
+      "big": "2 con clases suspendidas (mié 5)",
+      "d": "<b>Suspensión miércoles 5:</b> Jardín Verde Amanecer (Yungay, INTEGRA, 89 matrículas) y Liceo Nibaldo Sepúlveda Fernández (Portezuelo, 350 matrículas). Daños (goteras, filtraciones, anegamientos) en establecimientos de San Carlos, Ránquil, Ñiquén, Coihueco, Pinto, Yungay y San Fabián. — SEREMI Educación 15:30."
     },
     {
       "c": "var(--b-rojo)",
       "ic": "pin",
       "t": "Albergues",
-      "big": "8 activos · 42 personas",
-      "d": "Quillón 9 · Ránquil 7 (Esc. Ñipas) · Ninhue 6 · San Carlos 4 · Ñiquén (evento anterior) 4 · <b>San Nicolás 3 (Sede Curica — nuevo)</b> · Portezuelo 3 · Coelemu habilitado sin ocupación. Coihueco sale del listado; Cobquecura mantiene 6 albergadas en tabla sin establecimiento informado. (Albergues 06:50; total albergadas 42 al corte 15:00.)"
+      "big": "9 activos · 27 personas",
+      "d": "Quillón 9 (Esc. Amanda Chávez) · Ninhue 6 (Liceo Arturo Prat) · San Carlos 4 (Liceo Agrícola) · Portezuelo 3 (Liceo Nibaldo Sepúlveda) · San Nicolás 3 (Sede Curica) · Ránquil 2 (Esc. Ñipas) · Ñiquén, Coelemu y Cobquecura habilitados sin ocupación. (Albergues corte 13:40; total albergadas 27 al corte 16:55.)"
     },
     {
       "c": "var(--b-verde)",
@@ -707,75 +690,75 @@ const DATOS_POR_DEFECTO = {
       "d": "CONAF (Res. 174/2026) mantiene levantada la restricción de uso del fuego en Ñuble, excepto Chillán y Chillán Viejo."
     },
     {
-      "c": "var(--b-verde)",
+      "c": "var(--b-naranja)",
       "ic": "air",
       "t": "Calidad del aire (GEC)",
-      "big": "Bueno",
-      "d": "Pronóstico oficial MMA <b>Bueno para el lunes 3</b> (00:00–23:59) en Chillán y Chillán Viejo. Sin episodio crítico declarado. Período GEC hasta el 30-sep."
+      "big": "Regular",
+      "d": "Pronóstico oficial MMA <b>Regular para el miércoles 5</b> en Chillán y Chillán Viejo. Sin episodio crítico declarado. Período GEC hasta el 30-sep."
     },
     {
       "c": "var(--b-azul)",
       "ic": "drop",
       "t": "Pluviometría y radiación UV",
-      "big": "38,8 mm / 24 h",
-      "d": "Chillán: <b>38,8 mm</b> en 24 horas (DMC, consulta 18:31). Acumulado anual <b>528,7 mm</b>; déficit <b>−17,7%</b>. UV pronosticado para el lunes 3: <b>1–2 (bajo)</b>. ATP zoosanitaria regional vigente."
+      "big": "1,6 mm / 24 h",
+      "d": "Chillán: <b>1,6 mm</b> en 24 horas (DMC, consulta 18:00). Acumulado anual <b>546,7 mm</b>; déficit <b>−15,9%</b>. UV pronosticado para el miércoles 5: <b>1–2 (bajo)</b>. ATP zoosanitaria regional vigente."
     }
   ],
   "forecast": [
     {
-      "dia": "Lunes 3-ago",
-      "temp": "8° / 15°C",
-      "cielo": "Cubierto y chubascos aislados en la madrugada, variando a nublado con chubascos aislados · cordillera: chubascos de nieve variando a chubascos de agua débiles",
-      "viento": "rachas hasta 50 km/h",
-      "iso": "1.800–2.900 m",
+      "dia": "Miércoles 5-ago",
+      "temp": "8° / 12°C",
+      "cielo": "Cubierto y chubascos · precipitaciones moderadas a fuertes en corto periodo (tarde-noche) · cordillera: chubascos de nieve variando a nevadas y ventisca",
+      "viento": "40–60 km/h · rachas hasta 80 km/h (cordillera)",
+      "iso": "2.200–1.300 m",
       "hl": true,
-      "flag": "Post-frontal",
-      "precip": "sobre suelos saturados · cauces en vigilancia"
+      "flag": "Nuevo frontal",
+      "precip": "sistema frontal sobre suelos saturados · cauces en vigilancia"
     },
     {
-      "dia": "Martes 4-ago",
-      "temp": "9° / 15°C",
-      "cielo": "Nublado con chubascos débiles en la madrugada, luego nublado · cordillera: chubascos de agua débiles variando a nieve aislados",
-      "viento": "hasta 40 km/h",
-      "iso": "2.900–2.100 m",
+      "dia": "Jueves 6-ago",
+      "temp": "3° / 12°C",
+      "cielo": "Nublado con chubascos aislados · cordillera: nevadas y ventisca",
+      "viento": "25–40 km/h · rachas hasta 50 km/h",
+      "iso": "1.300–2.000 m",
       "hl": false
     },
     {
-      "dia": "Miércoles 5-ago",
-      "temp": "7° / 12°C",
-      "cielo": "Cubierto, con chubascos aislados hacia la mañana · cordillera: chubascos de nieve débiles variando a nevadas",
-      "viento": "rachas hasta 50 km/h",
-      "iso": "2.100–1.600 m",
+      "dia": "Viernes 7-ago",
+      "temp": "0° / 11°C",
+      "cielo": "Nublado con chubascos de agua-nieve aislados · cordillera: chubascos de nieve y ventisca",
+      "viento": "40–60 km/h · rachas hasta 70 km/h (cordillera)",
+      "iso": "2.000–1.000 m",
       "hl": false
     }
   ],
   "avisos": [
     {
-      "when": "hasta la noche del dom 2",
-      "tt": "<span class=\"mtag\">Aviso</span> Probables tormentas eléctricas, granizos y fuertes rachas",
-      "cov": "Región de Ñuble",
-      "code": "A373-5 2026 · emitido 02-08 17:33",
+      "when": "tarde-noche del mié 5",
+      "tt": "<span class=\"mtag\">Alerta</span> Precipitaciones moderadas a fuertes en corto periodo",
+      "cov": "Litoral, cordillera de la costa, valle y precordillera",
+      "code": "AA123 2026 · emitida 04-08 12:46",
       "b": "now"
     },
     {
-      "when": "hasta hoy dom 2",
-      "tt": "<span class=\"mtag\">Aviso</span> Probables trombas marinas (nubes convectivas)",
-      "cov": "Litoral",
-      "code": "DMC/SERVIMET · emitido 30-07 19:08",
+      "when": "tarde-noche del mié 5",
+      "tt": "<span class=\"mtag\">Alerta</span> Viento moderado a fuerte",
+      "cov": "Litoral, cordillera de la costa, valle y precordillera",
+      "code": "AA125 2026 · emitida 04-08 15:51",
       "b": "now"
     },
     {
-      "when": "hasta tarde hoy dom 2",
+      "when": "mañana mié 5 a mañana jue 6",
+      "tt": "<span class=\"mtag\">Aviso</span> Nevadas normales a moderadas",
+      "cov": "Cordillera",
+      "code": "A386-1 2026 · emitido 04-08 12:22",
+      "b": "now"
+    },
+    {
+      "when": "madrugada mié 5 a noche vie 7",
       "tt": "<span class=\"mtag\">Aviso</span> Viento normal a moderado",
-      "cov": "Cordillera",
-      "code": "365-6 2026 · emitido 01-08 07:31",
-      "b": "now"
-    },
-    {
-      "when": "hasta mañana lun 3",
-      "tt": "<span class=\"mtag\">Aviso</span> Precipitaciones normales a moderadas",
-      "cov": "Cordillera",
-      "code": "A364-7 2026 · emitido 01-08 12:35",
+      "cov": "Región de Ñuble",
+      "code": "A387-1 2026 · emitido 04-08 15:50",
       "b": "now"
     },
     {
@@ -787,8 +770,8 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "when": "vigente",
-      "tt": "<span class=\"mtag\">ATP</span> Alerta Temprana Preventiva zoosanitaria",
-      "cov": "Regional",
+      "tt": "<span class=\"mtag\">ATP</span> Alerta Temprana Preventiva zoosanitaria y volcánica (Pinto y Coihueco)",
+      "cov": "Regional / Pinto y Coihueco",
       "code": "SENAPRED",
       "b": "now"
     }
@@ -796,42 +779,42 @@ const DATOS_POR_DEFECTO = {
   "fuentes": [
     {
       "n": "SENAPRED",
-      "t": "02-08 19:02 · Informe Diario PM",
+      "t": "04-08 19:16 · Informe Diario PM · Informe N°146-I · ATR N°65-A",
       "st": "ok"
     },
     {
       "n": "DGA (cauces)",
-      "t": "02-08 13:00 · Itata Coelemu y Lonquén en rojo · caudal s/d",
-      "st": "warn"
+      "t": "04-08 16:23 · estaciones bajo umbral azul, sin desborde · caudal s/d",
+      "st": "ok"
     },
     {
       "n": "DMC (amenaza + pronóstico)",
-      "t": "02-08 18:21 · pronóstico 3 días",
+      "t": "04-08 · pronóstico 3 días + alertas frontal mié 5",
       "st": "ok"
     },
     {
       "n": "DMC (pluviometría)",
-      "t": "02-08 18:31 · 38,8 mm/24h",
+      "t": "04-08 18:00 · 1,6 mm/24h",
       "st": "ok"
     },
     {
       "n": "SEC (electricidad)",
-      "t": "146-E · 11.417 (4,2%) · verificar en línea",
-      "st": "warn"
+      "t": "146-I · 191 (0,1%) · verificar en línea",
+      "st": "ok"
     },
     {
       "n": "Vialidad MOP / Carabineros",
-      "t": "02-08 18:38 · solo N-42 cortada",
+      "t": "04-08 16:38 · troncal operativa · N-42 rehabilitada",
       "st": "ok"
     },
     {
       "n": "DGAC (aeródromo)",
-      "t": "02-08 18:00 · operativo (cerrado desde 18:31)",
+      "t": "04-08 18:00 · operativo (cerrado desde 18:33)",
       "st": "ok"
     },
     {
       "n": "MMA (calidad del aire)",
-      "t": "03-08 · Bueno (pronóstico oficial)",
+      "t": "05-08 · Regular (pronóstico oficial)",
       "st": "ok"
     },
     {
@@ -841,7 +824,7 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "n": "Municipalidades (albergues)",
-      "t": "02-08 06:50 · 8 activos · 42",
+      "t": "04-08 13:40 · 9 activos · 27",
       "st": "ok"
     },
     {
@@ -850,9 +833,9 @@ const DATOS_POR_DEFECTO = {
       "st": "ok"
     },
     {
-      "n": "SEREMI Educación · CONAF · CSN/SHOA",
-      "t": "sin novedades nuevas",
-      "st": "warn"
+      "n": "SEREMI Educación · CONAF · SISS/DOH",
+      "t": "04-08 15:30 · suspensión clases mié 5 (Yungay, Portezuelo)",
+      "st": "ok"
     }
   ],
   "equipos": []
