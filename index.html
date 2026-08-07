@@ -357,8 +357,8 @@
    ============================================================ */
 const DATOS_POR_DEFECTO = {
   "meta": {
-    "reporte": "ATR N°71 (Res. 89) · Informe N°146-N",
-    "envio": "07-08-2026 · 09:36 · Informe de Emergencia N°146-N (Ampliación, corte 06-08 19:49): afectación regional al alza — 4.592 personas afectadas (Ránquil sube a 1.124), 1.218 damnificadas y 884 viviendas con daño (11 destruidas); energía baja a 16 clientes (0,1%); DGA (07-08 07:17) reporta toda la red hidrométrica bajo el umbral de Alerta Azul, sin riesgo de desbordes. Situación de alertas sin cambios: se mantiene Amarilla meteorológica regional (ATR N°65-A) y crecidas canceladas (ATR N°71). DMC mantiene avisos de aguanieve, tormentas eléctricas, viento y heladas para el fin de semana",
+    "reporte": "ATR N°71 (Res. 89) · Informe N°146-N · Monitoreo Diario AM 07-08",
+    "envio": "07-08-2026 · 11:31 · Informe Diario de Monitoreo Regional AM (corte 07-08 11:10): sin nuevos datos de afectación (se mantiene la línea del Informe N°146-N, corte 06-08 19:49). Alertas sin cambios — Amarilla meteorológica regional (ATR N°65-A), ATP zoosanitaria regional y ATP volcánica Nevados de Chillán (Pinto y Coihueco). Pluviometría Chillán: 567,1 mm acumulados, déficit −15%, S/P en 24 h (10:47). Calidad del aire pronosticada 'Regular' para el viernes 7 (Chillán y Chillán Viejo). Red vial troncal operativa reconfirmada (10:32), N-55 con porte obligatorio de cadenas km 69. DMC/SERVIMET mantiene avisos de aguanieve, tormentas eléctricas, viento, heladas y marejadas para el fin de semana",
     "base": "Alerta <b>Amarilla meteorológica regional</b> vigente (ATR N°65-A, 03-08 20:56) · <b>alertas por crecida CANCELADAS</b> — ríos Lonquén, Chillán e Itata y estero Coyanco — por <b>ATR N°71 (Res. exenta N°89, 05-08 11:00)</b> · ATP zoosanitaria regional y ATP volcánica (Pinto y Coihueco) vigentes · <b>afectación actualizada s/ Informe de Emergencia N°146-N (corte 06-08 19:49): 4.592 personas afectadas, 1.218 damnificadas, 331 aisladas, 80 evacuadas y 18 albergadas</b> en 6 albergues, con <b>884 viviendas con daño (11 destruidas)</b> · energía <b>16 clientes (0,1%)</b> · <b>DGA (07-08 07:17): toda la red hidrométrica bajo el umbral de Alerta Azul</b>, sin riesgo de desbordes · DMC mantiene avisos de viento, aguanieve (valle, vie 7–sáb 8), tormentas eléctricas (precordillera/cordillera, vie 7–sáb 8), heladas (dom 9–lun 10) y marejadas (litoral, sáb 8–dom 9) · <b>dos incendios estructurales residenciales en Chillán</b> (3 viviendas, en desarrollo, sin lesionados conocidos) s/ Informes N°148 y N°149 (06-08, preliminares)",
     "estado": "AMARILLA METEOROLÓGICA REGIONAL · CRECIDAS CANCELADAS (ATR N°71)",
     "tono": "amber",
@@ -408,13 +408,13 @@ const DATOS_POR_DEFECTO = {
       "label": "Red vial troncal",
       "val": "Sin cortes",
       "vsmall": true,
-      "foot": "Ruta 5 y Autopista Itata operativas · N-55 porte oblig. de cadenas km 69 · cortes en rutas secundarias (N-268, N-309, N-505, N-228) y caminos vecinales · MOP/Carabineros 06-08 14:00"
+      "foot": "Ruta 5 y Autopista Itata operativas · N-55 porte oblig. de cadenas km 69 · troncal reconfirmada MOP/Carabineros 07-08 10:32 · cortes en rutas secundarias (N-268, N-309, N-505, N-228) y caminos vecinales s/ 146-N (06-08 14:00)"
     },
     {
       "a": "var(--b-azul)",
       "label": "Agua caída 24 h",
       "val": "S/P",
-      "foot": "Chillán · sin precipitación registrada en 24 h · total anual 546,7 mm · déficit −16,3% · DMC 17:35"
+      "foot": "Chillán · sin precipitación registrada en 24 h · total anual 567,1 mm · déficit −15% · DMC 07-08 10:47"
     }
   ],
   "alertMap": {
@@ -660,7 +660,7 @@ const DATOS_POR_DEFECTO = {
       "ic": "road",
       "t": "Conectividad vial",
       "big": "Sin cortes troncales",
-      "d": "El Informe N°146-N (vial MOP/Carabineros, corte 06-08 14:00) reporta <b>la red troncal operativa</b> (Ruta 5, Autopista Itata 152 y principales rutas N-). Única restricción troncal: <b>N-55</b> (Chillán–Pinto), porte obligatorio de cadenas desde el km 69. <b>Rutas secundarias interrumpidas:</b> N-268 (San Carlos, desborde estero Verquico), N-309 (San Fabián, puente El Valiente), N-505 (Coihueco, anegamiento), N-228 (Ñiquén), N-674 (Chillán Viejo) y N-352 San Jorge. Persisten <b>puentes colapsados/dañados</b> en El Carmen (El Huemul, Estero Navidad, Lomas de Horno) y Quillón (Alto Culturía), más numerosos caminos vecinales en Ránquil, Portezuelo y El Carmen. — Vialidad MOP/Carabineros."
+      "d": "El monitoreo vial MOP/Carabineros (<b>consulta 07-08 10:32</b>) reconfirma <b>la red troncal operativa</b> (Ruta 5, Autopista Itata 152 y principales rutas N-). Única restricción troncal: <b>N-55</b> (Chillán–Pinto), porte obligatorio de cadenas desde el km 69. Aeródromo Bernardo O'Higgins (Chillán) operativo (08:30–18:35). <b>Rutas secundarias interrumpidas</b> s/ Informe N°146-N (corte 06-08 14:00): N-268 (San Carlos, desborde estero Verquico), N-309 (San Fabián, puente El Valiente), N-505 (Coihueco, anegamiento), N-228 (Ñiquén), N-674 (Chillán Viejo) y N-352 San Jorge. Persisten <b>puentes colapsados/dañados</b> en El Carmen (El Huemul, Estero Navidad, Lomas de Horno) y Quillón (Alto Culturía), más numerosos caminos vecinales en Ránquil, Portezuelo y El Carmen. — Vialidad MOP/Carabineros."
     },
     {
       "c": "var(--b-morado)",
@@ -701,42 +701,42 @@ const DATOS_POR_DEFECTO = {
       "c": "var(--b-naranja)",
       "ic": "air",
       "t": "Calidad del aire (GEC)",
-      "big": "Alerta (jue 6)",
-      "d": "Pronóstico oficial MMA de <b>Alerta ambiental para el jueves 6</b> (00:00–23:59) en Chillán y Chillán Viejo. Rige <b>prohibición de calderas &gt;75 kWt</b> con emisiones sobre 50 mg/m³N. Período GEC hasta el 30-sep."
+      "big": "Regular (vie 7)",
+      "d": "Pronóstico oficial MMA de calidad del aire <b>Regular para el viernes 7</b> (00:00–23:59) en Chillán y Chillán Viejo. Rige el <b>Plan de Descontaminación</b>; período GEC hasta el 30-sep. — MMA (Informe Diario 07-08 11:10)."
     },
     {
       "c": "var(--b-azul)",
       "ic": "drop",
       "t": "Pluviometría y radiación UV",
       "big": "S/P · 24 h",
-      "d": "Chillán: <b>sin precipitación registrada</b> en las últimas 24 horas (DMC, consulta 05-08 17:35). Acumulado anual <b>546,7 mm</b>; déficit <b>−16,3%</b>. UV pronosticado: <b>1–2 (bajo)</b>. ATP zoosanitaria regional vigente."
+      "d": "Chillán: <b>sin precipitación registrada</b> en las últimas 24 horas (DMC, consulta 07-08 10:47). Acumulado anual <b>567,1 mm</b>; déficit <b>−15%</b>. UV pronosticado: <b>1–2 (bajo)</b>. ATP zoosanitaria regional vigente."
     }
   ],
   "forecast": [
     {
-      "dia": "Jueves 6-ago",
-      "temp": "3° / 13°C",
-      "cielo": "Madrugada cubierto y lluvia fuerte, variando a nubosidad parcial · cordillera: cubierto con nevadas y ventisca",
-      "viento": "25–40 km/h · rachas hasta 50 km/h (valle) · 40–60 km/h rachas 70 (cordillera)",
-      "iso": "1.300–2.200 m",
-      "hl": true,
-      "flag": "Lluvia fuerte AM",
-      "precip": "lluvia fuerte en la madrugada sobre suelos saturados · vigilancia de cauces"
-    },
-    {
       "dia": "Viernes 7-ago",
-      "temp": "0° / 10°C",
-      "cielo": "Nublado y helada · cordillera: chubascos de nieve y ventisca · valle: aguanieve desde la noche",
-      "viento": "40–60 km/h · rachas hasta 70 km/h (cordillera)",
-      "iso": "2.200–900 m",
-      "hl": false
+      "temp": "s/d / 7°C",
+      "cielo": "Tarde nublado con chubascos débiles; noche chubascos aislados · valle: aguanieve desde la noche · cordillera: chubascos de nieve, ventisca y probables tormentas eléctricas",
+      "viento": "25–40 km/h · ráfagas hasta 50 km/h (valle) · 40–60 km/h rachas 70 (cordillera)",
+      "iso": "2.100–900 m",
+      "hl": true,
+      "flag": "Aguanieve valle (noche)",
+      "precip": "chubascos débiles en la tarde; aguanieve en el valle desde la noche · tormentas eléctricas en cordillera · vigilancia de cauces"
     },
     {
       "dia": "Sábado 8-ago",
       "temp": "1° / 8°C",
-      "cielo": "Nublado con chubascos de agua-nieve aislados y escarcha · cordillera: chubascos de nieve · litoral: marejadas",
+      "cielo": "Nublado con chubascos de agua-nieve aislados y escarcha · cordillera: cubierto con chubascos de nieve · litoral: marejadas",
       "viento": "rachas hasta 60 km/h (cordillera)",
       "iso": "900–700 m",
+      "hl": false
+    },
+    {
+      "dia": "Domingo 9-ago",
+      "temp": "-2° / 11°C",
+      "cielo": "Despejado · cordillera: chubascos de nieve aislados · litoral: marejadas",
+      "viento": "rachas hasta 70 km/h (cordillera)",
+      "iso": "700–1.300 m",
       "hl": false
     }
   ],
@@ -816,7 +816,7 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "n": "DMC (pluviometría)",
-      "t": "05-08 17:35 · Chillán S/P en 24 h",
+      "t": "07-08 10:47 · Chillán S/P en 24 h · 567,1 mm acum. · déficit −15%",
       "st": "ok"
     },
     {
@@ -826,12 +826,12 @@ const DATOS_POR_DEFECTO = {
     },
     {
       "n": "Vialidad MOP / Carabineros",
-      "t": "06-08 14:00 · Ruta 5 y Autopista Itata operativas · cortes en N-268, N-309, N-505 y vecinales · N-55 cadenas km 69",
+      "t": "07-08 10:32 · red troncal operativa (Ruta 5 y Autopista Itata) · N-55 cadenas km 69 · cortes en N-268, N-309, N-505 y vecinales s/ 146-N (06-08 14:00)",
       "st": "ok"
     },
     {
       "n": "MMA (calidad del aire)",
-      "t": "Alerta pronosticada jue 6 (Chillán y Chillán Viejo)",
+      "t": "07-08 · Regular pronosticado vie 7 (Chillán y Chillán Viejo)",
       "st": "ok"
     },
     {
